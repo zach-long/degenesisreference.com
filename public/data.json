@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "name": "Bream",
+            "season": "Any",
+            "location": ["River, Pelican Town", "River, Cindersnap Forest"],
+            "time": ["Night"],
+            "weather": "Any"
+        },
+        {
+            "name": "Catfish",
+            "season": "Spring",
+            "location": ["River, Pelican Town", "River, Cindersnap Forest", "Secret Woods", "Witch's Swamp"],
+            "time": ["Morning"],
+            "weather": "Rain"
+        },
+        {
+            "name": "Halibut",
+            "season": "Summer",
+            "location": ["Ocean"],
+            "time": ["Morning", "Night"],
+            "weather": "Any"
+        },
+        {
+            "name": "Salmon",
+            "season": "Fall",
+            "location": ["River, Pelican Town", "River, Cindersnap Forest"],
+            "time": ["Morning", "Afternoon"],
+            "weather": "Any"
+        },
+        {
+            "name": "Albacore",
+            "season": "Winter",
+            "location": ["Ocean"],
+            "time": ["Morning", "Night"],
+            "weather": "Any"
+        }
+    ]
+}

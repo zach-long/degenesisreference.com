@@ -1,0 +1,23 @@
+{
+  "name": "degen-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle-app": "webpack --config src/webpack.config.js",
+    "watch-app": "webpack --watch --config src/webpack.config.js",
+    "test-deploy": "rsync -avz ./ pi@192.168.1.9:www/degen-loader --exclude .env"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}

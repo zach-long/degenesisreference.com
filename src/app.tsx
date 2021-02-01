@@ -13,27 +13,27 @@ type Item = {
 }
 
 interface AppState {
-    spring: boolean | undefined,
-    summer: boolean | undefined,
-    fall: boolean | undefined,
-    winter: boolean | undefined,
-    itemList: Array<Item>
+    search: string,
+    itemList: Array<Item>,
+    sortedList: Array<Item>
 }
 
 class App extends Component<any, AppState, any> {
     constructor(props: any) {
         super(props);
         this.state = {
-            spring: true,
-            summer: true,
-            fall: true,
-            winter: true,
-            "itemList": []
+            // linked to the search bar; the string to search for in item name list
+            "search": '',
+
+            // cached list of all items; used for iterating not displaying
+            "itemList": [],
+
+            // items that are displayed row-by-row based on search parameters
+            "sortedList": []
         }
     }
 
     getData = () => {
-        console.log(`getData()`);
         fetch('public/data.json', {
             headers: {
                 'Content-Type': 'application/json',
@@ -47,24 +47,60 @@ class App extends Component<any, AppState, any> {
             console.log(`JSON result: `);
             console.log(json);
             this.setState({
-                "itemList": json.data
+                "itemList": json.data,
+                "sortedList": json.data
             });
         });
     }
 
-    // handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //     const target = event.target;
-    //     const value = target.type === 'checkbox' ? target.checked : target.value;
-    //     const name = target.name;
+    searchItemList = (searchValue: string, searchPool: Array<Item>): Promise<Array<Item>> => {
+        console.log(`Searching cached items for query param: ${searchValue}`);
+        return new Promise((resolve) => {
+            let foundResults: Array<Item> = searchPool.filter((item: Item) => {
+                console.log(`Iterating over: `);
+                console.log(item);
 
-    //     // @ts-ignore
-    //     this.setState({
-    //         [name]: value
-    //     });
-    // }
+                let standardizedCompareValue: string = item.name.toLowerCase();
+                let standardizedSearchValue: string = searchValue.toLowerCase();
+
+                let checkMatch: number = standardizedCompareValue.indexOf(standardizedSearchValue);
+                
+                if (checkMatch != -1) {
+                    console.log(`Found match at ${checkMatch} for ${item.name}`);
+                    // let foundMatch = item.name.indexOf(searchValue);
+                    return item;
+                }
+                
+            });
+
+            console.log(`Map results logged below:`);
+            console.log(foundResults);
+            
+            resolve(foundResults);
+        });
+    }
+
+    handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const target: EventTarget & HTMLInputElement = event.target;
+        const value: string = target.value;
+
+        let pool: Array<Item> = this.state.itemList;
+
+        console.log(`Preparing to search list logged below:`);
+        console.log(this.state.itemList);
+        this.searchItemList(value, pool).then((foundResults) => {
+            console.log(`FOUND: ${foundResults}`);
+
+            this.setState({
+                "search": value,
+                "sortedList": foundResults
+            });
+        });
+    }
 
     componentDidMount() {
-        console.log(`componentDidMount()`);
+        console.log(`*************** componentDidMount() ***************`);
+        console.log(this.state);
         this.getData();
     }
 
@@ -74,54 +110,9 @@ class App extends Component<any, AppState, any> {
                 <header>
                 </header>
                 <main>
-                    {/* <section id="sort-parameters">
-                        <form>
-                            <table className="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Name Sort</th>
-                                        <th scope="col">Season Sort</th>
-                                        <th scope="col">Location Sort</th>
-                                        <th scope="col">Time Sort</th>
-                                        <th scope="col">Weather Sort</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
-                                        <td> */}
-                                            {/* <div>
-                                                <label>Spring</label>
-                                                <input name="spring" type="checkbox" checked={this.state.spring} onChange={this.handleChange}/>
-                                            </div>
-                                            <div>
-                                                <label>Summer</label>
-                                                <input name="summer" type="checkbox" checked={this.state.summer} onChange={this.handleChange}/>
-                                            </div>
-                                            <div>
-                                                <label>Fall</label>
-                                                <input name="fall" type="checkbox" checked={this.state.fall} onChange={this.handleChange}/>
-                                            </div>
-                                            <div>
-                                                <label>Winter</label>
-                                                <input name="winter" type="checkbox" checked={this.state.winter} onChange={this.handleChange}/>
-                                            </div> */}
-                                        {/* </td>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </section> */}
+                    <section id="sort-parameters">
+                        <input name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
+                    </section>
                     <section id="sorted-output">
                         <table className="table">
                             <thead>
@@ -135,7 +126,7 @@ class App extends Component<any, AppState, any> {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.itemList.map((item) => <ItemRow item={item}/>)}
+                                {this.state.sortedList.map((item) => <ItemRow item={item}/>)}
                             </tbody>
                         </table>
                         

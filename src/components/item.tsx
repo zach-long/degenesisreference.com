@@ -2,10 +2,14 @@ import React, { Component } from "react";
 
 type Item = {
     name: string,
-    season: "Any" | "Spring" | "Summer" | "Fall" | "Winter",
-    location: Array<string>,
-    time: Array<"Any" | "Morning" | "Afternoon" | "Night">,
-    weather: "Any" | "Rain" | "Sun" | "Wind"
+    effect: string,
+    encumbrance: number,
+    tech: number,
+    slots: number | null,
+    value: number,
+    resources: number,
+    cult: string | null,
+    category: string
 }
 
 interface ItemProps {
@@ -25,12 +29,15 @@ class ItemRow extends Component<ItemProps, ItemState> {
     render() {
         return (
             <tr>
-                <th scope="row"></th>
                 <td>{this.props.item.name}</td>
-                <td>{this.props.item.season}</td>
-                <td>{this.props.item.location}</td>
-                <td>{this.props.item.time}</td>
-                <td>{this.props.item.weather}</td>
+                <td>{this.props.item.effect}</td>
+                <td>{this.props.item.encumbrance}</td>
+                <td>{this.props.item.tech}</td>
+                <td>{this.props.item.slots}</td>
+                <td>{this.props.item.value}</td>
+                <td>{this.props.item.resources}</td>
+                <td>{this.props.item.cult}</td>
+                <td>{this.props.item.category}</td>
             </tr>
         );
     }

@@ -6,10 +6,14 @@ import ItemRow from './components/item';
 
 type Item = {
     name: string,
-    season: "Any" | "Spring" | "Summer" | "Fall" | "Winter",
-    location: Array<string>,
-    time: Array<"Any" | "Morning" | "Afternoon" | "Night">,
-    weather: "Any" | "Rain" | "Sun" | "Wind"
+    effect: string,
+    encumbrance: number,
+    tech: number,
+    slots: number | null,
+    value: number,
+    resources: number,
+    cult: string | null,
+    category: string
 }
 
 interface AppState {
@@ -117,12 +121,15 @@ class App extends Component<any, AppState, any> {
                         <table className="table">
                             <thead>
                                 <tr>
-                                    <th scope="col"></th>
                                     <th scope="col">Name</th>
-                                    <th scope="col">Season</th>
-                                    <th scope="col">Location</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Weather</th>
+                                    <th scope="col">Effect</th>
+                                    <th scope="col">Encumbrance</th>
+                                    <th scope="col">Tech</th>
+                                    <th scope="col">Slots</th>
+                                    <th scope="col">Value</th>
+                                    <th scope="col">Resources</th>
+                                    <th scope="col">Cult</th>
+                                    <th scope="col">Category</th>
                                 </tr>
                             </thead>
                             <tbody>

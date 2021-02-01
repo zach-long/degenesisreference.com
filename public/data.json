@@ -1,39 +1,59 @@
 {
     "data": [
         {
-            "name": "Bream",
-            "season": "Any",
-            "location": ["River, Pelican Town", "River, Cindersnap Forest"],
-            "time": ["Night"],
-            "weather": "Any"
+            "name": "Matches",
+            "effect": "10 uses",
+            "encumbrance": 0,
+            "tech": 2,
+            "slots": null,
+            "value": 25,
+            "resources": 0,
+            "cult": null,
+            "category": "Light / Fire"
         },
         {
-            "name": "Catfish",
-            "season": "Spring",
-            "location": ["River, Pelican Town", "River, Cindersnap Forest", "Secret Woods", "Witch's Swamp"],
-            "time": ["Morning"],
-            "weather": "Rain"
+            "name": "Torch",
+            "effect": "Reduces darkness penalty by 1, 30 minutes",
+            "encumbrance": 0,
+            "tech": 1,
+            "slots": null,
+            "value": 3,
+            "resources": 0,
+            "cult": null,
+            "category": "Light / Fire"
         },
         {
-            "name": "Halibut",
-            "season": "Summer",
-            "location": ["Ocean"],
-            "time": ["Morning", "Night"],
-            "weather": "Any"
+            "name": "Regional map",
+            "effect": "INS+Orienteering +1D",
+            "encumbrance": 0,
+            "tech": 2,
+            "slots": null,
+            "value": 40,
+            "resources": 0,
+            "cult": null,
+            "category": "Orienteering"
         },
         {
-            "name": "Salmon",
-            "season": "Fall",
-            "location": ["River, Pelican Town", "River, Cindersnap Forest"],
-            "time": ["Morning", "Afternoon"],
-            "weather": "Any"
+            "name": "Rope 10m",
+            "effect": "Necessary for climbing endeavors",
+            "encumbrance": 0,
+            "tech": 2,
+            "slots": null,
+            "value": 60,
+            "resources": 0,
+            "cult": null,
+            "category": "Climbing"
         },
         {
-            "name": "Albacore",
-            "season": "Winter",
-            "location": ["Ocean"],
-            "time": ["Morning", "Night"],
-            "weather": "Any"
+            "name": "Blanket / sleeping bag",
+            "effect": "Restful sleep: recover 1 Flesh Wound per night",
+            "encumbrance": 2,
+            "tech": 1,
+            "slots": null,
+            "value": 10,
+            "resources": 0,
+            "cult": null,
+            "category": "Overnight"
         }
     ]
 }

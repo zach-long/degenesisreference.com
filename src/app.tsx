@@ -46,7 +46,7 @@ class App extends Component<any, AppState, any> {
     }
 
     getData = () => {
-        fetch('public/data.json', {
+        fetch('data.json', {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'

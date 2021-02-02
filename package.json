@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "bundle-app": "webpack --config src/webpack.config.js",
     "watch-app": "webpack --watch --config src/webpack.config.js",
     "scss-watch": "node-sass -w scss --output public/css",

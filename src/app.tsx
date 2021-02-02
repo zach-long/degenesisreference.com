@@ -133,12 +133,13 @@ class App extends Component<any, AppState, any> {
 
     render() {
         return (
-            <div>
+            <div id="app-container">
                 <header>
+                    <h1 className="text-center">Degenesis Item Lookup Database</h1>
                 </header>
-                <main>
+                <main id="content">
                     <section id="sort-parameters">
-                        <input name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
+                        <input id="name-search" name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
                         {/* <table className="table">
                             <thead>
                                 <tr>
@@ -194,6 +195,12 @@ class App extends Component<any, AppState, any> {
                     </section>
                 </main>
                 <footer>
+                    <div className="footer-element">
+                        <h6 className="text-center">&copy; 2021 Zachary Long</h6>
+                    </div>
+                    <div className="footer-element">
+                        <h6 className="text-center">"Degenesis Item Lookup Database" is not affiliated with SIXMOREVODKA and exists with the intent of making their intellectual property, DEGENESIS, more accessible. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a>.</h6>
+                    </div>
                 </footer>
             </div>
             

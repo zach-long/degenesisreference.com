@@ -6,6 +6,7 @@
   "scripts": {
     "bundle-app": "webpack --config src/webpack.config.js",
     "watch-app": "webpack --watch --config src/webpack.config.js",
+    "scss-watch": "node-sass -w scss --output public/css",
     "test-deploy": "rsync -avz ./ pi@192.168.1.9:www/degen-loader --exclude .env"
   },
   "author": "",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "ts-loader": "^8.0.14",

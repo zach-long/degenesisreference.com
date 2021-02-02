@@ -1,0 +1,81 @@
+// font used is Avenir or Copenhagen may work as a stand-in
+
+// VARIABLES
+$content-width: 80%;
+$red: #ed1d27;
+
+// $name-search-border-color: #404040;
+// $name-search-border-color: #4f4f4f;
+$name-search-border-color: #5e5e5e;
+$name-search-border-focus-color: $red;
+$name-search-border-trans-speed: 250ms;
+// $link-hover-trans-speed: 150ms;
+
+// TYPOGRAPHY
+a {
+    color: #ed1d27;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+// STYLES
+html, body, #app, #app-container {
+    min-height: 100vh;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+#content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        width: $content-width;
+    }
+
+    #sort-parameters {
+        padding: 0 0 .5rem 0;
+
+        #name-search {
+            width: 15rem;
+            border: none;
+            border-width: 0 0 2px 0;
+            border-style: solid;
+            border-color: $name-search-border-color;
+            transition: border-color $name-search-border-trans-speed ease-in-out;
+
+            &:focus {
+                outline: none;
+                border-color: $red;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 0 2rem 0;
+    margin-top: auto;
+
+    .footer-element {
+        width: $content-width;
+        border-top: 2px solid #000;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}

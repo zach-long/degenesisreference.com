@@ -17,23 +17,31 @@ type Item = {
 }
 
 interface AppState {
+    techOne: boolean,
+    techTwo: boolean,
     search: string,
     itemList: Array<Item>,
-    sortedList: Array<Item>
+    sortedList: Array<Item>,
+    displayList: Array<Item>
 }
 
 class App extends Component<any, AppState, any> {
     constructor(props: any) {
         super(props);
         this.state = {
+            "techOne": false,
+            "techTwo": false,
             // linked to the search bar; the string to search for in item name list
             "search": '',
 
             // cached list of all items; used for iterating not displaying
             "itemList": [],
 
-            // items that are displayed row-by-row based on search parameters
-            "sortedList": []
+            // 
+            "sortedList": [],
+
+            // 
+            "displayList" :[]
         }
     }
 
@@ -52,7 +60,8 @@ class App extends Component<any, AppState, any> {
             console.log(json);
             this.setState({
                 "itemList": json.data,
-                "sortedList": json.data
+                "sortedList": json.data,
+                "displayList": json.data
             });
         });
     }
@@ -102,6 +111,20 @@ class App extends Component<any, AppState, any> {
         });
     }
 
+    // handleToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     const target: EventTarget & HTMLInputElement = event.target;
+    //     const value: boolean = target.checked;
+    //     const name: string = target.name;
+
+    //     console.log(`Limiting display list based on toggled sorting...`);
+    //     this.sortItemList()
+
+    //     // @ts-ignore
+    //     this.setState({
+    //         [name]: value
+    //     });
+    // }
+
     componentDidMount() {
         console.log(`*************** componentDidMount() ***************`);
         console.log(this.state);
@@ -110,12 +133,44 @@ class App extends Component<any, AppState, any> {
 
     render() {
         return (
-            <main>
+            <div>
                 <header>
                 </header>
                 <main>
                     <section id="sort-parameters">
                         <input name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
+                        {/* <table className="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Effect</th>
+                                    <th scope="col">Encumbrance</th>
+                                    <th scope="col">Tech</th>
+                                    <th scope="col">Slots</th>
+                                    <th scope="col">Value</th>
+                                    <th scope="col">Resources</th>
+                                    <th scope="col">Cult</th>
+                                    <th scope="col">Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="col">Name</td>
+                                    <td scope="col">Effect</td>
+                                    <td scope="col">Encumbrance</td>
+                                    <td scope="col">
+                                        <label>TechOne</label>
+                                        <input name="techOne" type="checkbox" checked={this.state.techOne} onChange={this.handleToggleChange}/>
+                                        <label>TechTwo</label>
+                                        <input name="techTwo" type="checkbox" checked={this.state.techTwo} onChange={this.handleToggleChange}/></td>
+                                    <td scope="col">Slots</td>
+                                    <td scope="col">Value</td>
+                                    <td scope="col">Resources</td>
+                                    <td scope="col">Cult</td>
+                                    <td scope="col">Category</td>
+                                </tr>
+                            </tbody>
+                        </table> */}
                     </section>
                     <section id="sorted-output">
                         <table className="table">
@@ -136,13 +191,11 @@ class App extends Component<any, AppState, any> {
                                 {this.state.sortedList.map((item) => <ItemRow item={item}/>)}
                             </tbody>
                         </table>
-                        
                     </section>
                 </main>
                 <footer>
-                    <h4>&#169; Zachary Long 2021</h4>
                 </footer>
-            </main>
+            </div>
             
         );
     }

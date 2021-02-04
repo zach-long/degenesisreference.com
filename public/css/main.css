@@ -20,18 +20,17 @@ header {
   align-items: center; }
   #content section {
     width: 80%; }
-  #content #sort-parameters {
-    padding: 0 0 .5rem 0; }
-    #content #sort-parameters #name-search {
-      width: 15rem;
-      border: none;
-      border-width: 0 0 2px 0;
-      border-style: solid;
-      border-color: #5e5e5e;
-      transition: border-color 250ms ease-in-out; }
-      #content #sort-parameters #name-search:focus {
-        outline: none;
-        border-color: #ed1d27; }
+  #content #sort-parameters #name-search {
+    margin: 0 0 .5rem 0;
+    width: 15rem;
+    border: none;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #5e5e5e;
+    transition: border-color 250ms ease-in-out; }
+    #content #sort-parameters #name-search:focus {
+      outline: none;
+      border-color: #ed1d27; }
 
 footer {
   display: flex;

@@ -17,31 +17,39 @@ type Item = {
 }
 
 interface AppState {
-    techOne: boolean,
-    techTwo: boolean,
+    sortingApplied: boolean,
     search: string,
+    categories: Object,
     itemList: Array<Item>,
     sortedList: Array<Item>,
     displayList: Array<Item>
+}
+
+type SortableItem = {
+    name: string,
+    checked: boolean
 }
 
 class App extends Component<any, AppState, any> {
     constructor(props: any) {
         super(props);
         this.state = {
-            "techOne": false,
-            "techTwo": false,
+            sortingApplied: false,
+
             // linked to the search bar; the string to search for in item name list
-            "search": '',
+            search: '',
+
+            // 
+            categories: {},
 
             // cached list of all items; used for iterating not displaying
-            "itemList": [],
+            itemList: [],
 
-            // 
-            "sortedList": [],
+            // used to iterate when sorting is already applied in some manner and additional sorting is being applied
+            sortedList: [],
 
-            // 
-            "displayList" :[]
+            // data sent to display components; contents should always match what is seen
+            displayList :[]
         }
     }
 
@@ -58,12 +66,27 @@ class App extends Component<any, AppState, any> {
         }).then((json) => {
             console.log(`JSON result: `);
             console.log(json);
+            let categories: Object = this.getCategories(json);
+            console.log(`* Categories:`);
+            console.log(categories);
             this.setState({
-                "itemList": json.data,
-                "sortedList": json.data,
-                "displayList": json.data
+                categories: categories,
+                itemList: json.data,
+                sortedList: json.data,
+                displayList: json.data
             });
         });
+    }
+
+    getCategories = (json: any): Object => {
+        let categories: Array<string> =  Array.from(new Set(json.data.map((dataObj: any): string => dataObj.category)));
+        let sortableCategories: Array<SortableItem> = categories.map((category: string): SortableItem => {
+            return {name: category, checked: false};
+        });
+        let builtCategories: Object = sortableCategories.reduce((o, key) => {
+            return {...o, [key.name]: key}
+        }, {});
+        return builtCategories;
     }
 
     searchItemList = (searchValue: string, searchPool: Array<Item>): Promise<Array<Item>> => {
@@ -105,25 +128,28 @@ class App extends Component<any, AppState, any> {
             console.log(`FOUND: ${foundResults}`);
 
             this.setState({
-                "search": value,
-                "sortedList": foundResults
+                search: value,
+                sortedList: foundResults
             });
         });
     }
 
-    // handleToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    //     const target: EventTarget & HTMLInputElement = event.target;
-    //     const value: boolean = target.checked;
-    //     const name: string = target.name;
+    handleCategoryToggleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const target: EventTarget & HTMLInputElement = event.target;
+        const value: boolean = target.checked;
+        const name: string = target.name;
 
-    //     console.log(`Limiting display list based on toggled sorting...`);
-    //     this.sortItemList()
+        console.log(`* handleCategoryToggleChange()`);
+        // @ts-expect-error
+        console.log(this.state.categories[name].name + ' ' + this.state.categories[name].checked + ' -> ' + value);
 
-    //     // @ts-ignore
-    //     this.setState({
-    //         [name]: value
-    //     });
-    // }
+        let category: Object = {...this.state.categories};
+        // @ts-expect-error
+        category[name].checked = value;
+
+        // @ts-expect-error
+        this.setState({category});
+    }
 
     componentDidMount() {
         console.log(`*************** componentDidMount() ***************`);
@@ -140,7 +166,7 @@ class App extends Component<any, AppState, any> {
                 <main id="content">
                     <section id="sort-parameters">
                         <input id="name-search" name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
-                        {/* <table className="table">
+                        <table className="table">
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>
@@ -159,19 +185,27 @@ class App extends Component<any, AppState, any> {
                                     <td scope="col">Name</td>
                                     <td scope="col">Effect</td>
                                     <td scope="col">Encumbrance</td>
-                                    <td scope="col">
-                                        <label>TechOne</label>
-                                        <input name="techOne" type="checkbox" checked={this.state.techOne} onChange={this.handleToggleChange}/>
-                                        <label>TechTwo</label>
-                                        <input name="techTwo" type="checkbox" checked={this.state.techTwo} onChange={this.handleToggleChange}/></td>
+                                    <td scope="col">Tech</td>
                                     <td scope="col">Slots</td>
                                     <td scope="col">Value</td>
                                     <td scope="col">Resources</td>
                                     <td scope="col">Cult</td>
-                                    <td scope="col">Category</td>
+                                    <td scope="col">
+                                        {/* {this.state.categories.map((category: SortableItem) => (
+                                            <div>
+                                                <input name={category.name} type="checkbox" checked={category.checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{category.name}</label>
+                                            </div>
+                                        ))} */}
+                                        {Object.keys(this.state.categories).map((key) => (
+                                        <div>
+                                            {/* @ts-ignore */}
+                                            <input name={this.state.categories[key].name} type="checkbox" checked={this.state.categories[key].checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{this.state.categories[key].name}</label>
+                                        </div>
+                                        ))}
+                                    </td>
                                 </tr>
                             </tbody>
-                        </table> */}
+                        </table>
                     </section>
                     <section id="sorted-output">
                         <table className="table">

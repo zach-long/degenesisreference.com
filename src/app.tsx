@@ -30,6 +30,11 @@ type SortableItem = {
     checked: boolean
 }
 
+type SortCriteria = {
+    sort: string,
+    value: Array<string>
+}
+
 class App extends Component<any, AppState, any> {
     constructor(props: any) {
         super(props);
@@ -78,13 +83,70 @@ class App extends Component<any, AppState, any> {
         });
     }
 
+    resetNameSearch = () => {
+        this.setState({search: ''});
+    }
+
+    // iterates over every sortable value in state to determine what the status of the 'sortingApplied' indicator should be
+    isSortingApplied = (): Promise<boolean> => {
+        return new Promise((resolve) => {
+            Object.keys(this.state.categories).map((key) => {
+                // @ts-expect-error
+                if (this.state.categories[key].checked == true) {
+                    resolve(true);
+                }
+            });
+            resolve(false);
+        });
+    }
+
+    // iterates over every sortable value in state to determine what fields are being sorted into which values per field
+    getSortedFields = (): Promise<Array<SortCriteria>> => {
+        return new Promise((resolve) => {
+            let sortedValues: Array<string> = Object.keys(this.state.categories).filter((key) => {
+                // @ts-ignore
+                if (this.state.categories[key].checked == true) {
+                    // @ts-ignore
+                    return this.state.categories[key].name
+                }
+            });
+            let sortedFields: Array<SortCriteria> = [{sort: "category", value: sortedValues}];
+            resolve(sortedFields);
+        });
+    }
+
+    // 
+    applySorting = (criteria: Array<SortCriteria>): Promise<Array<Item>> => {
+        console.log(`Searching cached items for sorting criteria...`);
+        return new Promise((resolve) => {
+            const searchPool = this.state.itemList;
+            console.log(`* Determining search pool, is sorting applied?`);
+            console.log(`* According to state: ${this.state.sortingApplied}`);
+            console.log(criteria);
+            let foundResults: Array<Item> = searchPool.filter((item: Item) => {
+                let matchedItem: Array<Item> = [];
+                criteria.forEach((criterion) => {
+                    // @ts-ignore
+                    if (criterion.value.includes(item[criterion.sort])) {
+                        matchedItem.push(item);
+                    }
+                });
+                if (matchedItem.length > 0) {
+                    return matchedItem;
+                }
+            });
+
+            resolve(foundResults);
+        });
+    }
+
     getCategories = (json: any): Object => {
         let categories: Array<string> =  Array.from(new Set(json.data.map((dataObj: any): string => dataObj.category)));
         let sortableCategories: Array<SortableItem> = categories.map((category: string): SortableItem => {
             return {name: category, checked: false};
         });
         let builtCategories: Object = sortableCategories.reduce((o, key) => {
-            return {...o, [key.name]: key}
+            return {...o, [key.name]: key};
         }, {});
         return builtCategories;
     }
@@ -109,7 +171,7 @@ class App extends Component<any, AppState, any> {
                 
             });
 
-            console.log(`Map results logged below:`);
+            console.log(`Filter results logged below:`);
             console.log(foundResults);
             
             resolve(foundResults);
@@ -120,7 +182,7 @@ class App extends Component<any, AppState, any> {
         const target: EventTarget & HTMLInputElement = event.target;
         const value: string = target.value;
 
-        let pool: Array<Item> = this.state.itemList;
+        let pool: Array<Item> = this.state.sortedList;
 
         console.log(`Preparing to search list logged below:`);
         console.log(this.state.itemList);
@@ -129,7 +191,7 @@ class App extends Component<any, AppState, any> {
 
             this.setState({
                 search: value,
-                sortedList: foundResults
+                displayList: foundResults
             });
         });
     }
@@ -146,9 +208,41 @@ class App extends Component<any, AppState, any> {
         let category: Object = {...this.state.categories};
         // @ts-expect-error
         category[name].checked = value;
-
         // @ts-expect-error
         this.setState({category});
+
+        console.log(`* isSortingApplied()`);
+        this.isSortingApplied().then((isSortingApplied: boolean) => {
+            console.log(isSortingApplied);
+            this.setState({sortingApplied: isSortingApplied});
+
+            if (isSortingApplied) {
+                console.log(`* getSortedFields()`);
+                this.getSortedFields().then((result: Array<SortCriteria>) => {
+                    console.log(result);
+    
+                    console.log(`* applySorting()`);
+                    this.applySorting(result).then((result: Array<Item>) => {
+                        console.log(`* applySorting result:`);
+                        console.log(result);
+    
+                        this.resetNameSearch();   
+                        this.setState({
+                            sortedList: result,
+                            displayList: result
+                        });
+                    });
+                });
+            } else {
+                console.log(`* No sorting applied, setting displayList to itemList`);
+
+                this.resetNameSearch();
+                this.setState({
+                    sortedList: this.state.itemList,
+                    displayList: this.state.itemList
+                });
+            }
+        });
     }
 
     componentDidMount() {
@@ -223,7 +317,7 @@ class App extends Component<any, AppState, any> {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.sortedList.map((item) => <ItemRow item={item}/>)}
+                                {this.state.displayList.map((item) => <ItemRow item={item}/>)}
                             </tbody>
                         </table>
                     </section>

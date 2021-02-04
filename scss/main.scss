@@ -4,8 +4,7 @@
 $content-width: 80%;
 $red: #ed1d27;
 
-// $name-search-border-color: #404040;
-// $name-search-border-color: #4f4f4f;
+$category-header-underline-color: lightgray;
 $name-search-border-color: #5e5e5e;
 $name-search-border-focus-color: $red;
 $name-search-border-trans-speed: 250ms;
@@ -61,6 +60,25 @@ header {
                 border-color: $red;
             }
         }
+    }
+}
+
+#category-container {
+    max-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.sort-category-container {
+    margin: 1rem 0 1rem 0;
+
+    h4 {
+        width: 33%;
+        display: inline-block;
+        border-bottom: 2px solid $category-header-underline-color;
+        padding: 0 0 .25rem 0;
     }
 }
 

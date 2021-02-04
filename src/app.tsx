@@ -259,47 +259,21 @@ class App extends Component<any, AppState, any> {
                 </header>
                 <main id="content">
                     <section id="sort-parameters">
-                        <input id="name-search" name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/>
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Effect</th>
-                                    <th scope="col">Encumbrance</th>
-                                    <th scope="col">Tech</th>
-                                    <th scope="col">Slots</th>
-                                    <th scope="col">Value</th>
-                                    <th scope="col">Resources</th>
-                                    <th scope="col">Cult</th>
-                                    <th scope="col">Category</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="col">Name</td>
-                                    <td scope="col">Effect</td>
-                                    <td scope="col">Encumbrance</td>
-                                    <td scope="col">Tech</td>
-                                    <td scope="col">Slots</td>
-                                    <td scope="col">Value</td>
-                                    <td scope="col">Resources</td>
-                                    <td scope="col">Cult</td>
-                                    <td scope="col">
-                                        {/* {this.state.categories.map((category: SortableItem) => (
-                                            <div>
-                                                <input name={category.name} type="checkbox" checked={category.checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{category.name}</label>
-                                            </div>
-                                        ))} */}
-                                        {Object.keys(this.state.categories).map((key) => (
-                                        <div>
-                                            {/* @ts-ignore */}
-                                            <input name={this.state.categories[key].name} type="checkbox" checked={this.state.categories[key].checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{this.state.categories[key].name}</label>
-                                        </div>
-                                        ))}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div className="sort-category-container">
+                            <h4>Name Sort</h4>
+                            <div className="sort-container"><input id="name-search" name="search" value={this.state.search} placeholder={"Search by name..."} onChange={this.handleChange}/></div>
+                        </div>
+                        <div className="sort-category-container">
+                            <h4>Category Sort</h4>
+                            <div id="category-container" className="sort-container">
+                                {Object.keys(this.state.categories).map((key) => (
+                                <div className="category-input-container">
+                                    {/* @ts-ignore */}
+                                    <input name={this.state.categories[key].name} type="checkbox" checked={this.state.categories[key].checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{this.state.categories[key].name}</label>
+                                </div>
+                                ))}
+                            </div>
+                        </div>
                     </section>
                     <section id="sorted-output">
                         <table className="table">

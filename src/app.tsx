@@ -5,14 +5,33 @@ import ReactDOM from 'react-dom';
 import ItemRow from './components/item';
 
 type Item = {
-    name: string,
-    effect: string,
-    encumbrance: number,
-    tech: number,
-    slots: number | null,
-    value: number,
-    resources: number,
-    cult: string | null,
+    name: string
+    maxSpeed?: string
+    acceleration?: string
+    brake?: string
+    armor?: string
+    body?: string
+    structure?: string
+    fleshWounds?: string,
+    trauma?: string,
+    armorRating?: string
+    defense?: string
+    attack? :string
+    effect?: string
+    injector?: string
+    caliber?: string
+    handling?: string
+    distance?: string
+    damage?: string
+    magazine?: string
+    qualities?: string
+    encumbrance?: string
+    artillerySlots?: string
+    tech?: string
+    slots?: string
+    value?: string
+    resources?: string
+    cult?: string
     category: string
 }
 
@@ -280,8 +299,27 @@ class App extends Component<any, AppState, any> {
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>
+                                    <th scope="col">Max Speed</th>
+                                    <th scope="col">Acceleration</th>
+                                    <th scope="col">Brake</th>
+                                    <th scope="col">Armor</th>
+                                    <th scope="col">Body</th>
+                                    <th scope="col">Structure</th>
+                                    <th scope="col">Flesh Wounds</th>
+                                    <th scope="col">Trauma</th>
+                                    <th scope="col">Armor Rating</th>
+                                    <th scope="col">Defense</th>
+                                    <th scope="col">Attack</th>
                                     <th scope="col">Effect</th>
+                                    <th scope="col">Injector</th>
+                                    <th scope="col">Caliber</th>
+                                    <th scope="col">Handling</th>
+                                    <th scope="col">Distance</th>
+                                    <th scope="col">Damage</th>
+                                    <th scope="col">Magazine</th>
+                                    <th scope="col">Qualities</th>
                                     <th scope="col">Encumbrance</th>
+                                    <th scope="col">Slots (Artillery)</th>
                                     <th scope="col">Tech</th>
                                     <th scope="col">Slots</th>
                                     <th scope="col">Value</th>

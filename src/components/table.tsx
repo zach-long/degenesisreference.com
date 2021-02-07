@@ -50,6 +50,11 @@ class Table extends Component<TableProps, TableState> {
         }
     }
 
+    capitalizeFirstLetters = (str: string): string => {
+        let cappedWords: Array<string> = str.split(' ').map((char) => char.charAt(0).toUpperCase() + char.slice(1));
+        return cappedWords.join(' ');
+    }
+
     componentDidMount() {
         // console.log(`MOUNT | Table`);
     }
@@ -67,7 +72,7 @@ class Table extends Component<TableProps, TableState> {
                         <tr>
                             {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
                             {this.props.headers.map((header) => (
-                                <th scope="col">{header}</th>
+                                <th scope="col">{this.capitalizeFirstLetters(header)}</th>
                             ))}
                         </tr>
                     </thead>

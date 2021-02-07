@@ -245,11 +245,12 @@ class App extends Component<any, AppState, any> {
     handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const target: EventTarget & HTMLInputElement = event.target;
         const value: string = target.value;
+        // const value = target.type === 'checkbox' ? target.checked : target.value;
 
         let pool: Array<Item> = this.state.sortedList;
 
         console.log(`Preparing to search list logged below:`);
-        console.log(this.state.itemList);
+        console.log(pool);
         this.searchItemList(value, pool).then((foundResults) => {
             console.log(`FOUND: ${foundResults}`);
 
@@ -310,7 +311,7 @@ class App extends Component<any, AppState, any> {
     }
 
     componentDidMount() {
-        console.log(`*************** componentDidMount() ***************`);
+        console.log(`MOUNT | App`);
         console.log(this.state);
         this.getData();
     }
@@ -340,8 +341,11 @@ class App extends Component<any, AppState, any> {
                         </div>
                     </section>
                     <section id="sorted-output">
-                        {console.log(`RENDER | building tables`)}
+                        {/* {console.log(`RENDER | building tables`)} */}
                         {Object.keys(this.state.categories).map((category) => (
+                            // load table only if (checked == true AND sortApplied == true) OR (checked = false AND sortApplied == false) -> checked == sortApplied?
+                            // @ts-expect-error
+                            (this.state.sortingApplied == this.state.categories[category].checked) &&
                             // @ts-expect-error
                             <Table category={this.state.categories[category].name} checked={this.state.categories[category].checked} headers={this.state.categories[category].headers} items={this.state.displayList} />
                         ))}

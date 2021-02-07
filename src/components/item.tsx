@@ -32,7 +32,8 @@ type Item = {
 }
 
 interface ItemProps {
-    item: Item
+    item: Item,
+    headers: Array<string>
 }
 
 interface ItemState {
@@ -45,37 +46,19 @@ class ItemRow extends Component<ItemProps, ItemState> {
         }
     }
 
+    componentDidMount() {
+        // console.log(`MOUNT | ItemRow`);
+        // console.log(`Expected columns: ${this.props.headers}`);
+        // console.log(`Item fields: ${Object.keys(this.props.item)}`)
+    }
+
     render() {
         return (
             <tr>
-                <td>{this.props.item.name}</td>
-                <td>{this.props.item.maxSpeed}</td>
-                <td>{this.props.item.acceleration}</td>
-                <td>{this.props.item.brake}</td>
-                <td>{this.props.item.armor}</td>
-                <td>{this.props.item.body}</td>
-                <td>{this.props.item.structure}</td>
-                <td>{this.props.item.fleshWounds}</td>
-                <td>{this.props.item.trauma}</td>
-                <td>{this.props.item.armorRating}</td>
-                <td>{this.props.item.defense}</td>
-                <td>{this.props.item.attack}</td>
-                <td>{this.props.item.effect}</td>
-                <td>{this.props.item.injector}</td>
-                <td>{this.props.item.caliber}</td>
-                <td>{this.props.item.handling}</td>
-                <td>{this.props.item.distance}</td>
-                <td>{this.props.item.damage}</td>
-                <td>{this.props.item.magazine}</td>
-                <td>{this.props.item.qualities}</td>
-                <td>{this.props.item.encumbrance}</td>
-                <td>{this.props.item.artillerySlots}</td>
-                <td>{this.props.item.tech}</td>
-                <td>{this.props.item.slots}</td>
-                <td>{this.props.item.value}</td>
-                <td>{this.props.item.resources}</td>
-                <td>{this.props.item.cult}</td>
-                <td>{this.props.item.category}</td>
+                {this.props.headers.map((header) => (
+                    // @ts-expect-error
+                    <td>{this.props.item[header]}</td>
+                ))}
             </tr>
         );
     }

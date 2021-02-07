@@ -37,7 +37,7 @@ interface TableProps {
     category: string,
     checked: boolean,
     headers: Array<string>,
-    items: Array<Item>
+    items: Array<Item>,
 }
 
 interface TableState {
@@ -51,15 +51,16 @@ class Table extends Component<TableProps, TableState> {
     }
 
     componentDidMount() {
-        console.log(`Table mounted`);
+        // console.log(`MOUNT | Table`);
     }
 
     render() {
         return (
             <table className="table">
                 <thead>
+                    <tr><th scope="col" colSpan={this.props.headers.length}>{this.props.category}</th></tr>
                     <tr>
-                        {console.log(`RENDER | loading table headers for ${this.props.category}`)}
+                        {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
                         {this.props.headers.map((header) => (
                             <th scope="col">{header}</th>
                         ))}
@@ -67,7 +68,7 @@ class Table extends Component<TableProps, TableState> {
                 </thead>
                 <tbody>
                     {this.props.items.map((item) => (
-                        item.category == this.props.category && <ItemRow item={item}/>
+                        item.category == this.props.category && <ItemRow item={item} headers={this.props.headers}/>
                     ))}
                 </tbody>
             </table>

@@ -63,7 +63,8 @@ header {
 
 .category-header-name {
   font-size: 1.5rem;
-  color: #c20811; }
+  color: #c20811;
+  font-weight: normal; }
 
 .category-table {
   margin: 0 0 4rem 0; }

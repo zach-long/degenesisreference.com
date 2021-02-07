@@ -111,6 +111,23 @@ class App extends Component<any, AppState, any> {
         this.setState({search: ''});
     }
 
+    resetSort = () => {
+        let falsifyCategories = this.state.categories;
+        Object.keys(falsifyCategories).forEach((category) => {
+            // @ts-expect-error
+            falsifyCategories[category].checked = false;
+        });
+        console.log(falsifyCategories);
+
+        this.setState({
+            sortingApplied: false,
+            search: '',
+            categories: falsifyCategories,
+            sortedList: this.state.itemList,
+            displayList: this.state.itemList
+        });
+    }
+
     // iterates over every sortable value in state to determine what the status of the 'sortingApplied' indicator should be
     isSortingApplied = (): Promise<boolean> => {
         return new Promise((resolve) => {
@@ -339,6 +356,7 @@ class App extends Component<any, AppState, any> {
                                 ))}
                             </div>
                         </div>
+                        <button type="button" className="btn btn-primary" onClick={this.resetSort}>Reset</button>
                     </section>
                     <section id="sorted-output">
                         {/* {console.log(`RENDER | building tables`)} */}

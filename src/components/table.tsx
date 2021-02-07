@@ -55,24 +55,32 @@ class Table extends Component<TableProps, TableState> {
     }
 
     render() {
-        return (
-            <table className="table">
-                <thead>
-                    <tr><th scope="col" colSpan={this.props.headers.length}>{this.props.category}</th></tr>
-                    <tr>
-                        {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
-                        {this.props.headers.map((header) => (
-                            <th scope="col">{header}</th>
+        let found = this.props.items.filter((item) => {
+            if (item.category == this.props.category) return item;
+        });
+
+        if (found.length > 0) {
+            return (
+                <table className="table">
+                    <thead>
+                        <tr><th scope="col" colSpan={this.props.headers.length}>{this.props.category}</th></tr>
+                        <tr>
+                            {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
+                            {this.props.headers.map((header) => (
+                                <th scope="col">{header}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.props.items.map((item) => (
+                            item.category == this.props.category && <ItemRow item={item} headers={this.props.headers}/>
                         ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.props.items.map((item) => (
-                        item.category == this.props.category && <ItemRow item={item} headers={this.props.headers}/>
-                    ))}
-                </tbody>
-            </table>
-        );
+                    </tbody>
+                </table>
+            )
+        } else {
+            return null;
+        }
     }
 }
 

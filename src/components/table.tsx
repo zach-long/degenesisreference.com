@@ -60,6 +60,11 @@ class Table extends Component<TableProps, TableState> {
     }
 
     render() {
+        let displayedHeaders = this.props.headers;
+        if (displayedHeaders.indexOf('category') != -1) {
+            displayedHeaders.splice(displayedHeaders.indexOf('category'), 1)
+        }
+
         let found = this.props.items.filter((item) => {
             if (item.category == this.props.category) return item;
         });
@@ -71,7 +76,7 @@ class Table extends Component<TableProps, TableState> {
                         <tr><th scope="col" colSpan={this.props.headers.length} className="category-header-name">{this.props.category}</th></tr>
                         <tr>
                             {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
-                            {this.props.headers.map((header) => (
+                            {displayedHeaders.map((header) => (
                                 <th scope="col">{this.capitalizeFirstLetters(header)}</th>
                             ))}
                         </tr>

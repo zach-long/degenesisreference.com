@@ -261,7 +261,6 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -276,8 +275,7 @@
             "slots": "2",
             "value": "20",
             "resources": "-",
-            "cult": "-2D",
-            "undefined": "3",
+            "cult": "",
             "category": "armed melee"
         },
         {
@@ -293,7 +291,6 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -309,7 +306,6 @@
             "value": "40",
             "resources": "",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -325,7 +321,6 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -341,7 +336,6 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -357,7 +351,6 @@
             "value": "300",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -373,7 +366,6 @@
             "value": "600",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -389,7 +381,6 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -405,7 +396,6 @@
             "value": "750",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -421,7 +411,6 @@
             "value": "350",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -437,7 +426,6 @@
             "value": "600",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -453,7 +441,6 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "undefined": "-",
             "category": "armed melee"
         },
         {
@@ -469,7 +456,6 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -485,7 +471,6 @@
             "value": "450",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -501,7 +486,6 @@
             "value": "120",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -517,7 +501,6 @@
             "value": "25",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -533,7 +516,6 @@
             "value": "280",
             "resources": "-",
             "cult": "",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -549,7 +531,6 @@
             "value": "2800",
             "resources": "-",
             "cult": "Spitalians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -565,7 +546,6 @@
             "value": "1000 x Level",
             "resources": "3 / 4 / 5",
             "cult": "Spitalians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -581,7 +561,6 @@
             "value": "1400",
             "resources": "4",
             "cult": "Spitalians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -597,7 +576,6 @@
             "value": "1800",
             "resources": "-",
             "cult": "Spitalians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -613,7 +591,6 @@
             "value": "2400",
             "resources": "3",
             "cult": "Chroniclers",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -629,7 +606,6 @@
             "value": "1500",
             "resources": "-",
             "cult": "Judges",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -645,7 +621,6 @@
             "value": "600",
             "resources": "1",
             "cult": "Scrappers",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -661,7 +636,6 @@
             "value": "300",
             "resources": "Unique",
             "cult": "Clanners",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -677,7 +651,6 @@
             "value": "1800",
             "resources": "3",
             "cult": "Anubians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -693,7 +666,6 @@
             "value": "3200",
             "resources": "6",
             "cult": "Anubians",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -709,7 +681,6 @@
             "value": "180",
             "resources": "3",
             "cult": "Neolibyans",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -725,7 +696,6 @@
             "value": "500",
             "resources": "-",
             "cult": "Scourgers",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -741,7 +711,6 @@
             "value": "1900",
             "resources": "2",
             "cult": "Scourgers",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -757,7 +726,6 @@
             "value": "600",
             "resources": "3",
             "cult": "Jehammedans",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -773,7 +741,6 @@
             "value": "3300",
             "resources": "4",
             "cult": "Jehammedans",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -789,7 +756,6 @@
             "value": "24000",
             "resources": "6",
             "cult": "Jehammedans",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -805,7 +771,6 @@
             "value": "2800",
             "resources": "5",
             "cult": "Jehammedans",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -821,7 +786,6 @@
             "value": "50",
             "resources": "1",
             "cult": "Apocalyptics",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -837,7 +801,6 @@
             "value": "5",
             "resources": "1",
             "cult": "Apocalyptics",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -853,7 +816,6 @@
             "value": "220",
             "resources": "-",
             "cult": "Apocalyptics",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -869,7 +831,6 @@
             "value": "1600",
             "resources": "3",
             "cult": "Apocalyptics",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -885,7 +846,6 @@
             "value": "30",
             "resources": "1",
             "cult": "Anabaptists",
-            "undefined": "",
             "category": "armed melee"
         },
         {
@@ -901,7 +861,6 @@
             "value": "1400",
             "resources": "2",
             "cult": "Anabaptists",
-            "undefined": "",
             "category": "armed melee"
         },
         {

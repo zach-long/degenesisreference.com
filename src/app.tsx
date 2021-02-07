@@ -2,6 +2,7 @@ import React, { Component, SyntheticEvent } from 'react';
 import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import Table from './components/table';
 import ItemRow from './components/item';
 
 type Item = {
@@ -46,7 +47,8 @@ interface AppState {
 
 type SortableItem = {
     name: string,
-    checked: boolean
+    checked: boolean,
+    headers: Array<string>
 }
 
 type SortCriteria = {
@@ -91,13 +93,17 @@ class App extends Component<any, AppState, any> {
             console.log(`JSON result: `);
             console.log(json);
             let categories: Object = this.getCategories(json);
-            console.log(`* Categories:`);
+            console.log(`Categorie result:`);
             console.log(categories);
+            return [categories, json];
+        }).then((ctgJsonArr) => {
+            console.log(`Setting state with categories & data`);
+            console.log(ctgJsonArr)
             this.setState({
-                categories: categories,
-                itemList: json.data,
-                sortedList: json.data,
-                displayList: json.data
+                categories: ctgJsonArr[0],
+                itemList: ctgJsonArr[1].data,
+                sortedList: ctgJsonArr[1].data,
+                displayList: ctgJsonArr[1].data
             });
         });
     }
@@ -159,14 +165,54 @@ class App extends Component<any, AppState, any> {
         });
     }
 
-    getCategories = (json: any): Object => {
-        let categories: Array<string> =  Array.from(new Set(json.data.map((dataObj: any): string => dataObj.category)));
-        let sortableCategories: Array<SortableItem> = categories.map((category: string): SortableItem => {
-            return {name: category, checked: false};
+    mergeCategories = (sortableCategories: Array<SortableItem>, tableHeaders: Array<{category: string, headers: Array<string>}>): Promise<Array<SortableItem>> => {
+        return new Promise((resolve) => {
+            sortableCategories.forEach((categoryItem: SortableItem, i) => {
+                // console.log(`${categoryItem.name} == ${tableHeaders[i].category}`);
+                // console.log(categoryItem.name == tableHeaders[i].category);
+                if (categoryItem.name == tableHeaders[i].category) {
+                    categoryItem.headers = tableHeaders[i].headers;
+                }
+            });
+            resolve(sortableCategories);
         });
+    }
+
+    getCategories = (json: any): Object => {
+        console.log(`* getCategories`);
+        let categories: Array<string> =  Array.from(new Set(json.data.map((dataObj: any): string => dataObj.category)));
+        // console.log(`* categories`);
+        // console.log(categories);
+        let sortableCategories: Array<SortableItem> = categories.map((category: string): SortableItem => {
+            return {name: category, checked: false, headers: []};
+        });
+        // console.log(`* sortableCategories`);
+        // console.log(sortableCategories);
+
+        let tableHeaders: Array<{category: string, headers: Array<string>}> = Array.from(new Set(json.data.map((dataObj: any) => {
+            return JSON.stringify({category: dataObj.category, headers: Object.keys(dataObj)})
+        })));
+        // console.log(`* tableHeaders unparsed`);
+        // console.log(tableHeaders);
+        // @ts-expect-error
+        tableHeaders = [...tableHeaders].map((i) => JSON.parse(i));
+        // console.log(`* tableHeaders parsed`);
+        // console.log(tableHeaders);
+
+        sortableCategories.forEach((categoryItem: SortableItem, i) => {
+            if (categoryItem.name == tableHeaders[i].category) {
+                categoryItem.headers = tableHeaders[i].headers;
+            }
+        });
+
+        // console.log(`* sortableCategories merged`);
+        // console.log(sortableCategories);
+
         let builtCategories: Object = sortableCategories.reduce((o, key) => {
             return {...o, [key.name]: key};
         }, {});
+        // console.log(`* builtCategories - being returned`);
+        // console.log(builtCategories);
         return builtCategories;
     }
 
@@ -285,6 +331,8 @@ class App extends Component<any, AppState, any> {
                         <div className="sort-category-container">
                             <h4>Category Sort</h4>
                             <div id="category-container" className="sort-container">
+                                {console.log(`* log categories from render`)}
+                                {console.log(this.state.categories)}
                                 {Object.keys(this.state.categories).map((key) => (
                                 <div className="category-input-container">
                                     {/* @ts-ignore */}

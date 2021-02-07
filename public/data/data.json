@@ -155,7 +155,7 @@
             "category": "Ammunitions"
         },
         {
-            "name": "CALIBER 12 (Rifle barr20",
+            "name": "CALIBER 12 (Rifle barrel ammo)",
             "damage": "10",
             "tech": "III",
             "value": "20",
@@ -1020,18 +1020,6 @@
             "category": "Armor"
         },
         {
-            "name": "",
-            "armor rating": "",
-            "qualities": "",
-            "encumbrance": "",
-            "tech": "",
-            "slots": "",
-            "value": "",
-            "resources": "",
-            "cult": "",
-            "category": "Armor"
-        },
-        {
             "name": "Preservist variety",
             "armor rating": "3",
             "qualities": "Sealed (+4S)",
@@ -1360,7 +1348,7 @@
             "body": "50",
             "structure": "25",
             "tech": "III",
-            "slots": "-4",
+            "slots": "4",
             "value": "35000",
             "resources": "3",
             "cult": "Neolibyans",
@@ -2317,16 +2305,6 @@
             "category": "Orienteering"
         },
         {
-            "name": "",
-            "effect": "",
-            "encumbrance": "",
-            "tech": "",
-            "value": "",
-            "resources": "",
-            "cult": "",
-            "category": "Orienteering"
-        },
-        {
             "name": "Pathfinder",
             "effect": "INS+Orienteering +4D",
             "encumbrance": "2",
@@ -2553,7 +2531,7 @@
             "category": "Projectile Weapons"
         },
         {
-            "name": "Blow gun",
+            "name": "Blow Gun",
             "caliber": "Nails",
             "handling": "-",
             "distance": "3 / 12",
@@ -2585,18 +2563,18 @@
             "category": "Projectile Weapons"
         },
         {
-            "name": "Composite bo",
-            "caliber": "Arrow",
-            "handling": "",
+            "name": "Composite Bow",
+            "caliber": "Arrows",
+            "handling": "-",
             "distance": "15 / 60",
-            "damage": "8+F/",
-            "magazine": "",
+            "damage": "8+F/3",
+            "magazine": "1",
             "qualities": "",
-            "encumbrance": "",
-            "tech": "I",
-            "slots": "",
-            "value": "200",
-            "resources": "",
+            "encumbrance": "1",
+            "tech": "IV",
+            "slots": "2",
+            "value": "2000",
+            "resources": "-",
             "cult": "",
             "category": "Projectile Weapons"
         },
@@ -2927,7 +2905,7 @@
             "distance": "10",
             "damage": "1+T Trauma",
             "magazine": "8",
-            "qualities": "Thunder Strike, Area Damage (45 deg.)",
+            "qualities": "Thunder Strike, Area Damage (45°)",
             "encumbrance": "2",
             "tech": "IV",
             "slots": "-",
@@ -2943,12 +2921,12 @@
             "distance": "10",
             "damage": "1+T Ego",
             "magazine": "-",
-            "qualities": "Thunder Strike, Area Damage (45 deg.)",
+            "qualities": "Thunder Strike, Area Damage (45°)",
             "encumbrance": "1",
             "tech": "IV",
             "slots": "-",
-            "value": "",
-            "resources": "",
+            "value": "1500",
+            "resources": "1",
             "cult": "Chroniclers",
             "category": "Sonic Weapons"
         },

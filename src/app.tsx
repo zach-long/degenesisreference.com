@@ -356,7 +356,7 @@ class App extends Component<any, AppState, any> {
                                 ))}
                             </div>
                         </div>
-                        <button type="button" className="btn btn-primary" onClick={this.resetSort}>Reset</button>
+                        <button type="button" className="btn btn-primary btn-reset" onClick={this.resetSort}>Reset</button>
                     </section>
                     <section id="sorted-output">
                         {/* {console.log(`RENDER | building tables`)} */}

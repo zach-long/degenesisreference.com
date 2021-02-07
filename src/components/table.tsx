@@ -61,9 +61,9 @@ class Table extends Component<TableProps, TableState> {
 
         if (found.length > 0) {
             return (
-                <table className="table">
+                <table className="table category-table">
                     <thead>
-                        <tr><th scope="col" colSpan={this.props.headers.length}>{this.props.category}</th></tr>
+                        <tr><th scope="col" colSpan={this.props.headers.length} className="category-header-name">{this.props.category}</th></tr>
                         <tr>
                             {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
                             {this.props.headers.map((header) => (

@@ -13,6 +13,17 @@ html, body, #app, #app-container {
 header {
   padding: 1rem 0; }
 
+.btn-reset {
+  padding: .2rem .6rem;
+  margin: .5rem 0;
+  color: white;
+  background-color: #708090;
+  border-color: #708090; }
+  .btn-reset:hover {
+    color: white;
+    background-color: #384048;
+    border-color: #384048; }
+
 #content {
   position: relative;
   display: flex;
@@ -31,20 +42,31 @@ header {
     #content #sort-parameters #name-search:focus {
       outline: none;
       border-color: #ed1d27; }
+  #content #sorted-output {
+    padding: 1rem 0 0 0; }
 
 #category-container {
   max-height: 10rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
+  #category-container .category-input-container {
+    margin: 0 .25rem; }
 
 .sort-category-container {
   margin: 1rem 0 1rem 0; }
   .sort-category-container h4 {
-    width: 33%;
+    width: 100%;
     display: inline-block;
     border-bottom: 2px solid lightgray;
     padding: 0 0 .25rem 0; }
+
+.category-header-name {
+  font-size: 1.5rem;
+  color: #c20811; }
+
+.category-table {
+  margin: 0 0 4rem 0; }
 
 footer {
   display: flex;

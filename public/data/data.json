@@ -9,7 +9,7 @@
             "value": "50",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "Pheromone marker",
@@ -20,7 +20,7 @@
             "value": "30",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "Irritant",
@@ -31,7 +31,7 @@
             "value": "70",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "EX-Aerosol / EG-1",
@@ -42,7 +42,7 @@
             "value": "1500",
             "resources": "6",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "Fire dust",
@@ -53,7 +53,7 @@
             "value": "80",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "Black band",
@@ -64,7 +64,7 @@
             "value": "600",
             "resources": "5",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": "Chlorine gas",
@@ -75,133 +75,133 @@
             "value": "120",
             "resources": "4",
             "cult": "Spitalians",
-            "category": "agents"
+            "category": "Agents"
         },
         {
             "name": ".50 GL",
             "damage": "12",
             "tech": "IV",
             "value": "70",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": ".357",
             "damage": "6",
             "tech": "IV",
             "value": "20",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": ".44",
             "damage": "10",
             "tech": "IV",
             "value": "50",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "5.56x45mm",
             "damage": "11",
             "tech": "IV",
             "value": "60",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "HF Full Jacket",
             "damage": "11",
             "tech": "IV",
             "value": "80",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "HF Hollow Point",
             "damage": "14",
             "tech": "IV",
             "value": "80",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "5.56 mm HUNTER Flechette",
             "damage": "13",
             "tech": "V",
             "value": "220",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "4.6x30 mm",
             "damage": "7",
             "tech": "IV",
             "value": "30",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "9mm",
             "damage": "9",
             "tech": "IV",
             "value": "40",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "5x30 mm Caseless",
             "damage": "8",
             "tech": "V",
             "value": "180",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "CALIBER 12 (Buckshot)",
             "damage": "10, scatters",
             "tech": "III",
             "value": "10",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "CALIBER 12 (Rifle barr20",
             "damage": "10",
             "tech": "III",
             "value": "20",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "Lead bullet and black powder",
             "damage": "8",
             "tech": "III",
             "value": "10",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "E-Cubed",
             "damage": "-",
             "tech": "V",
             "value": "1000",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "E-Cubed charging",
             "damage": "-",
             "tech": "IV",
             "value": "100",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "Arrow",
             "damage": "-",
             "tech": "I",
             "value": "1",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "Bolt",
             "damage": "-",
             "tech": "II",
             "value": "5",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "Can of Petro",
             "damage": "-",
             "tech": "III",
             "value": "300 (5 in Africa)",
-            "category": "ammunitions"
+            "category": "Ammunitions"
         },
         {
             "name": "Grapple",
@@ -216,7 +216,7 @@
             "value": "30",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Flail",
@@ -231,7 +231,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Butt stock",
@@ -246,7 +246,7 @@
             "value": "-",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Hand axe",
@@ -261,7 +261,7 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Club",
@@ -276,7 +276,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Chain of blades",
@@ -291,7 +291,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Knife",
@@ -306,7 +306,7 @@
             "value": "40",
             "resources": "",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Pitchfork",
@@ -321,7 +321,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Morning star",
@@ -336,7 +336,7 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Riding hoe",
@@ -351,7 +351,7 @@
             "value": "300",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Saber",
@@ -366,7 +366,7 @@
             "value": "600",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Shard dagger",
@@ -381,7 +381,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Battle axe",
@@ -396,7 +396,7 @@
             "value": "750",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Mace",
@@ -411,7 +411,7 @@
             "value": "350",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Sword",
@@ -426,7 +426,7 @@
             "value": "600",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Spade",
@@ -441,7 +441,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Spear",
@@ -456,7 +456,7 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Pickaxe",
@@ -471,7 +471,7 @@
             "value": "450",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Stone axe",
@@ -486,7 +486,7 @@
             "value": "120",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Stiletto",
@@ -501,7 +501,7 @@
             "value": "25",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Sledgehammer",
@@ -516,7 +516,7 @@
             "value": "280",
             "resources": "-",
             "cult": "",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Splayer",
@@ -531,7 +531,7 @@
             "value": "2800",
             "resources": "-",
             "cult": "Spitalians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Surgical tools",
@@ -546,7 +546,7 @@
             "value": "1000 x Level",
             "resources": "3 / 4 / 5",
             "cult": "Spitalians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Injector Gun",
@@ -561,7 +561,7 @@
             "value": "1400",
             "resources": "4",
             "cult": "Spitalians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Preservalis Sword",
@@ -576,7 +576,7 @@
             "value": "1800",
             "resources": "-",
             "cult": "Spitalians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Shocker",
@@ -591,7 +591,7 @@
             "value": "2400",
             "resources": "3",
             "cult": "Chroniclers",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Judgment Hammer",
@@ -606,7 +606,7 @@
             "value": "1500",
             "resources": "-",
             "cult": "Judges",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Crusher",
@@ -621,7 +621,7 @@
             "value": "600",
             "resources": "1",
             "cult": "Scrappers",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Iron Club of the Cockroach Kings",
@@ -636,7 +636,7 @@
             "value": "300",
             "resources": "Unique",
             "cult": "Clanners",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Khopesh",
@@ -651,7 +651,7 @@
             "value": "1800",
             "resources": "3",
             "cult": "Anubians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Ammit Sickle",
@@ -666,7 +666,7 @@
             "value": "3200",
             "resources": "6",
             "cult": "Anubians",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Curved dagger",
@@ -681,7 +681,7 @@
             "value": "180",
             "resources": "3",
             "cult": "Neolibyans",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Ancestor spear",
@@ -696,7 +696,7 @@
             "value": "500",
             "resources": "-",
             "cult": "Scourgers",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Scourge",
@@ -711,7 +711,7 @@
             "value": "1900",
             "resources": "2",
             "cult": "Scourgers",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Scimitar",
@@ -726,7 +726,7 @@
             "value": "600",
             "resources": "3",
             "cult": "Jehammedans",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Ram staff",
@@ -741,7 +741,7 @@
             "value": "3300",
             "resources": "4",
             "cult": "Jehammedans",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Horn",
@@ -756,7 +756,7 @@
             "value": "24000",
             "resources": "6",
             "cult": "Jehammedans",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Damascene Saber",
@@ -771,7 +771,7 @@
             "value": "2800",
             "resources": "5",
             "cult": "Jehammedans",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Koumaya dagger",
@@ -786,7 +786,7 @@
             "value": "50",
             "resources": "1",
             "cult": "Apocalyptics",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Steel cotters",
@@ -801,7 +801,7 @@
             "value": "5",
             "resources": "1",
             "cult": "Apocalyptics",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Ibis staff",
@@ -816,7 +816,7 @@
             "value": "220",
             "resources": "-",
             "cult": "Apocalyptics",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Flyssa",
@@ -831,7 +831,7 @@
             "value": "1600",
             "resources": "3",
             "cult": "Apocalyptics",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Warflail",
@@ -846,7 +846,7 @@
             "value": "30",
             "resources": "1",
             "cult": "Anabaptists",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Bidenhander",
@@ -861,7 +861,7 @@
             "value": "1400",
             "resources": "2",
             "cult": "Anabaptists",
-            "category": "armed melee"
+            "category": "Armed Melee"
         },
         {
             "name": "Salted clothing",
@@ -873,7 +873,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Fur cape",
@@ -885,7 +885,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Mammoth hide wrap",
@@ -897,7 +897,7 @@
             "value": "100",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Leather coat",
@@ -909,7 +909,7 @@
             "value": "120",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Leather armor",
@@ -921,7 +921,7 @@
             "value": "320",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Rubber harness",
@@ -933,7 +933,7 @@
             "value": "650",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Scrapper armor",
@@ -945,7 +945,7 @@
             "value": "700",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Chain mail",
@@ -957,7 +957,7 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Reinforced metal plate armor",
@@ -969,7 +969,7 @@
             "value": "750",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Kevlar jacket",
@@ -981,7 +981,7 @@
             "value": "1400",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "AMSUMO casing",
@@ -993,7 +993,7 @@
             "value": "9000",
             "resources": "-",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Spitalian suit",
@@ -1005,7 +1005,7 @@
             "value": "300",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Hygienist suit",
@@ -1017,7 +1017,7 @@
             "value": "900",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "",
@@ -1029,7 +1029,7 @@
             "value": "",
             "resources": "",
             "cult": "",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Preservist variety",
@@ -1041,7 +1041,7 @@
             "value": "800",
             "resources": "4",
             "cult": "Spitalians",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Chroniclers’ suit",
@@ -1053,7 +1053,7 @@
             "value": "300",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Harness",
@@ -1065,7 +1065,7 @@
             "value": "4800",
             "resources": "-",
             "cult": "Hellvetics",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Spotter Harness",
@@ -1077,7 +1077,7 @@
             "value": "3500",
             "resources": "3",
             "cult": "Hellvetics",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Heavy Duty",
@@ -1089,7 +1089,7 @@
             "value": "8000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Hat and coat",
@@ -1101,7 +1101,7 @@
             "value": "180",
             "resources": "1",
             "cult": "Judges",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Druschinnik silk armor",
@@ -1113,7 +1113,7 @@
             "value": "600",
             "resources": "4",
             "cult": "Clanners",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Flak jacket and helmet",
@@ -1125,7 +1125,7 @@
             "value": "1600",
             "resources": "2",
             "cult": "Scourgers",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Flak jacket and lion helmet",
@@ -1137,7 +1137,7 @@
             "value": "1600",
             "resources": "-",
             "cult": "Scourgers",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Ram helmet (Arianoi)",
@@ -1149,7 +1149,7 @@
             "value": "100",
             "resources": "1",
             "cult": "Jehammedans",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Black fleece (Arianoi)",
@@ -1161,7 +1161,7 @@
             "value": "16000",
             "resources": "6",
             "cult": "Jehammedans",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Ceramic fiber combination",
@@ -1173,7 +1173,7 @@
             "value": "22000",
             "resources": "-",
             "cult": "RG",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Composite armor",
@@ -1185,7 +1185,7 @@
             "value": "28000",
             "resources": "-",
             "cult": "RG",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Graph combat suit",
@@ -1197,7 +1197,7 @@
             "value": "60000",
             "resources": "-",
             "cult": "Free Spirit",
-            "category": "armor"
+            "category": "Armor"
         },
         {
             "name": "Sheet metal shield",
@@ -1210,7 +1210,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "shields"
+            "category": "Shields"
         },
         {
             "name": "Plastic shield",
@@ -1223,7 +1223,7 @@
             "value": "220",
             "resources": "-",
             "cult": "",
-            "category": "shields"
+            "category": "Shields"
         },
         {
             "name": "Oval shield",
@@ -1236,7 +1236,7 @@
             "value": "250",
             "resources": "1",
             "cult": "Scourgers",
-            "category": "shields"
+            "category": "Shields"
         },
         {
             "name": "Tunnel Shield",
@@ -1249,7 +1249,7 @@
             "value": "450",
             "resources": "2",
             "cult": "Hellvetics",
-            "category": "shields"
+            "category": "Shields"
         },
         {
             "name": "Flamethrower",
@@ -1263,7 +1263,7 @@
             "tech": "III",
             "slots": "1",
             "value": "6000",
-            "category": "artillery"
+            "category": "Artillery"
         },
         {
             "name": "Harpoon thrower",
@@ -1277,7 +1277,7 @@
             "tech": "III",
             "slots": "1",
             "value": "2200",
-            "category": "artillery"
+            "category": "Artillery"
         },
         {
             "name": "Canon",
@@ -1291,7 +1291,7 @@
             "tech": "IV",
             "slots": "2",
             "value": "22000",
-            "category": "artillery"
+            "category": "Artillery"
         },
         {
             "name": "Catapult",
@@ -1305,7 +1305,7 @@
             "tech": "II",
             "slots": "2",
             "value": "3000",
-            "category": "artillery"
+            "category": "Artillery"
         },
         {
             "name": "Machine Gun",
@@ -1319,7 +1319,7 @@
             "tech": "IV",
             "slots": "2",
             "value": "8000",
-            "category": "artillery"
+            "category": "Artillery"
         },
         {
             "name": "Boat",
@@ -1334,7 +1334,7 @@
             "value": "500",
             "resources": "-",
             "cult": "",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Dhau",
@@ -1349,7 +1349,7 @@
             "value": "6000",
             "resources": "-",
             "cult": "",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Merchant vessel",
@@ -1364,7 +1364,7 @@
             "value": "35000",
             "resources": "3",
             "cult": "Neolibyans",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Catamaran",
@@ -1379,7 +1379,7 @@
             "value": "40000",
             "resources": "4",
             "cult": "Apocalyptics",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Speedboat",
@@ -1394,7 +1394,7 @@
             "value": "55000",
             "resources": "5",
             "cult": "Scourgers",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Tanker",
@@ -1409,7 +1409,7 @@
             "value": "800000",
             "resources": "6",
             "cult": "Neolibyans",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Armed catamaran",
@@ -1424,7 +1424,7 @@
             "value": "120000",
             "resources": "6",
             "cult": "Apocalyptics",
-            "category": "boats"
+            "category": "Boats"
         },
         {
             "name": "Source",
@@ -1434,7 +1434,7 @@
             "value": "5000 x level",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Fumor",
@@ -1444,7 +1444,7 @@
             "value": "2500 x level",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Dome of rays",
@@ -1454,7 +1454,7 @@
             "value": "1000 x level",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Greenlight",
@@ -1464,7 +1464,7 @@
             "value": "4000 x level",
             "resources": "4",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Discharge",
@@ -1474,7 +1474,7 @@
             "value": "1000 x level",
             "resources": "3",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Screamer",
@@ -1484,7 +1484,7 @@
             "value": "500",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Freon",
@@ -1494,7 +1494,7 @@
             "value": "2000 x level",
             "resources": "4",
             "cult": "Chroniclers",
-            "category": "chronicler suit modules"
+            "category": "Chronicler Suit Modules"
         },
         {
             "name": "Rope 10m",
@@ -1504,7 +1504,7 @@
             "value": "60",
             "resources": "-",
             "cult": "",
-            "category": "climbing"
+            "category": "Climbing"
         },
         {
             "name": "Climbing harness",
@@ -1514,7 +1514,7 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "category": "climbing"
+            "category": "Climbing"
         },
         {
             "name": "Radio",
@@ -1524,7 +1524,7 @@
             "value": "1500",
             "resources": "-",
             "cult": "",
-            "category": "communication"
+            "category": "Communication"
         },
         {
             "name": "Portable Uplink",
@@ -1534,7 +1534,7 @@
             "value": "3500",
             "resources": "6",
             "cult": "Chroniclers",
-            "category": "communication"
+            "category": "Communication"
         },
         {
             "name": "Radio Backpack",
@@ -1544,7 +1544,7 @@
             "value": "6000",
             "resources": "3",
             "cult": "Hellvetics",
-            "category": "communication"
+            "category": "Communication"
         },
         {
             "name": "Black powder",
@@ -1560,7 +1560,7 @@
             "value": "100",
             "resources": "-",
             "cult": "",
-            "category": "explosives"
+            "category": "Explosives"
         },
         {
             "name": "TNT",
@@ -1576,7 +1576,7 @@
             "value": "300",
             "resources": "-",
             "cult": "",
-            "category": "explosives"
+            "category": "Explosives"
         },
         {
             "name": "Explosives",
@@ -1592,7 +1592,7 @@
             "value": "800",
             "resources": "3",
             "cult": "Hellvetics",
-            "category": "explosives"
+            "category": "Explosives"
         },
         {
             "name": "Explosive bottles",
@@ -1608,7 +1608,7 @@
             "value": "60",
             "resources": "1",
             "cult": "Jehammedans",
-            "category": "explosives"
+            "category": "Explosives"
         },
         {
             "name": "Matches",
@@ -1618,7 +1618,7 @@
             "value": "25",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Torch",
@@ -1628,7 +1628,7 @@
             "value": "3",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Flint and tinder",
@@ -1638,7 +1638,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Lighter",
@@ -1648,7 +1648,7 @@
             "value": "180",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Oil lamp",
@@ -1658,7 +1658,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Lamp oil",
@@ -1668,7 +1668,7 @@
             "value": "10",
             "resources": "-",
             "cult": "",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Sunburst",
@@ -1678,7 +1678,7 @@
             "value": "1200",
             "resources": "2",
             "cult": "palers",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Cyclops Eye",
@@ -1688,7 +1688,7 @@
             "value": "14000",
             "resources": "3",
             "cult": "palers",
-            "category": "light / fire"
+            "category": "Light / Fire"
         },
         {
             "name": "Fishing gear",
@@ -1698,7 +1698,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "getting food"
+            "category": "Getting Food"
         },
         {
             "name": "Cooking equipment",
@@ -1708,7 +1708,7 @@
             "value": "30",
             "resources": "-",
             "cult": "",
-            "category": "getting food"
+            "category": "Getting Food"
         },
         {
             "name": "Flask",
@@ -1718,7 +1718,7 @@
             "value": "10",
             "resources": "-",
             "cult": "",
-            "category": "getting food"
+            "category": "Getting Food"
         },
         {
             "name": "Water filter",
@@ -1728,7 +1728,7 @@
             "value": "120",
             "resources": "-",
             "cult": "",
-            "category": "getting food"
+            "category": "Getting Food"
         },
         {
             "name": "Automatic Pistol",
@@ -1744,7 +1744,7 @@
             "value": "2500",
             "resources": "-",
             "cult": "",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Pistol",
@@ -1760,7 +1760,7 @@
             "value": "1200",
             "resources": "-",
             "cult": "",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Revolver",
@@ -1776,7 +1776,7 @@
             "value": "1200",
             "resources": "-",
             "cult": "",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Heavy Pistol",
@@ -1792,7 +1792,7 @@
             "value": "2800",
             "resources": "-",
             "cult": "",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Signal Pistol",
@@ -1808,7 +1808,7 @@
             "value": "900",
             "resources": "-",
             "cult": "",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Stubbed Trailblazer",
@@ -1824,7 +1824,7 @@
             "value": "14000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Stubbed Trailblazer",
@@ -1840,7 +1840,7 @@
             "value": "14000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Flintlock Pistol",
@@ -1856,7 +1856,7 @@
             "value": "300",
             "resources": "2",
             "cult": "Judges",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Grinder",
@@ -1872,7 +1872,7 @@
             "value": "600",
             "resources": "4",
             "cult": "Scrappers",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Submachine Gun",
@@ -1888,7 +1888,7 @@
             "value": "3500",
             "resources": "3",
             "cult": "Paler",
-            "category": "handguns"
+            "category": "Handguns"
         },
         {
             "name": "Heavyweight",
@@ -1898,7 +1898,7 @@
             "value": "6800",
             "resources": "3",
             "cult": "Hellvetics",
-            "category": "heavy duty modules"
+            "category": "Heavy Duty Modules"
         },
         {
             "name": "Cutting tool",
@@ -1908,7 +1908,7 @@
             "value": "1200",
             "resources": "2",
             "cult": "Hellvetics",
-            "category": "heavy duty modules"
+            "category": "Heavy Duty Modules"
         },
         {
             "name": "Cooling aggregate",
@@ -1918,7 +1918,7 @@
             "value": "5000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "heavy duty modules"
+            "category": "Heavy Duty Modules"
         },
         {
             "name": "Arc welder",
@@ -1928,7 +1928,7 @@
             "value": "2000",
             "resources": "3",
             "cult": "Hellvetics",
-            "category": "heavy duty modules"
+            "category": "Heavy Duty Modules"
         },
         {
             "name": "Tunnel Driller",
@@ -1938,7 +1938,7 @@
             "value": "1000",
             "resources": "2",
             "cult": "Hellvetics",
-            "category": "heavy duty modules"
+            "category": "Heavy Duty Modules"
         },
         {
             "name": "Grenade launcher",
@@ -1954,7 +1954,7 @@
             "value": "1900",
             "resources": "-",
             "cult": "",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Rocket launcher",
@@ -1970,7 +1970,7 @@
             "value": "4200",
             "resources": "-",
             "cult": "",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Heavy MG",
@@ -1986,7 +1986,7 @@
             "value": "8000",
             "resources": "-",
             "cult": "",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Pneumo Hammer",
@@ -2002,7 +2002,7 @@
             "value": "1500",
             "resources": "-",
             "cult": "Clanners",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Cartridge launcher",
@@ -2018,7 +2018,7 @@
             "value": "2800",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Spitfire",
@@ -2034,7 +2034,7 @@
             "value": "3800",
             "resources": "3",
             "cult": "Anabaptists",
-            "category": "heavy weapons"
+            "category": "Heavy Weapons"
         },
         {
             "name": "Breathing cloth",
@@ -2044,7 +2044,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "masks"
+            "category": "Masks"
         },
         {
             "name": "Charcoal absorber",
@@ -2054,7 +2054,7 @@
             "value": "200",
             "resources": "-",
             "cult": "",
-            "category": "masks"
+            "category": "Masks"
         },
         {
             "name": "Breathing apparatus",
@@ -2064,7 +2064,7 @@
             "value": "600",
             "resources": "-",
             "cult": "",
-            "category": "masks"
+            "category": "Masks"
         },
         {
             "name": "Bandage",
@@ -2074,7 +2074,7 @@
             "value": "10",
             "resources": "-",
             "cult": "",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Apothecarium",
@@ -2084,7 +2084,7 @@
             "value": "2500 x level",
             "resources": "4 / 5 / 6",
             "cult": "Spitalians",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Surgical tools",
@@ -2094,7 +2094,7 @@
             "value": "1000 x level",
             "resources": "3 / 4 / 5",
             "cult": "Spitalians",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Field kit",
@@ -2104,7 +2104,7 @@
             "value": "250",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Sequencer",
@@ -2114,7 +2114,7 @@
             "value": "4500",
             "resources": "5",
             "cult": "Spitalians",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Crucible",
@@ -2124,7 +2124,7 @@
             "value": "150",
             "resources": "2",
             "cult": "Anubians",
-            "category": "medical"
+            "category": "Medical"
         },
         {
             "name": "Gaited horse",
@@ -2138,7 +2138,7 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "category": "mounts"
+            "category": "Mounts"
         },
         {
             "name": "Charger",
@@ -2152,7 +2152,7 @@
             "value": "2500",
             "resources": "-",
             "cult": "",
-            "category": "mounts"
+            "category": "Mounts"
         },
         {
             "name": "Newcrest horse",
@@ -2166,7 +2166,7 @@
             "value": "8000",
             "resources": "5 Renown",
             "cult": "Spitalians",
-            "category": "mounts"
+            "category": "Mounts"
         },
         {
             "name": "Judges’ horse",
@@ -2180,7 +2180,7 @@
             "value": "5500",
             "resources": "3",
             "cult": "Judges",
-            "category": "mounts"
+            "category": "Mounts"
         },
         {
             "name": "Mammoth",
@@ -2194,7 +2194,7 @@
             "value": "15000",
             "resources": "6",
             "cult": "Scrappers",
-            "category": "mounts"
+            "category": "Mounts"
         },
         {
             "name": "Perat",
@@ -2204,7 +2204,7 @@
             "value": "50 x level",
             "resources": "1 / 2 / 3",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Hiddekel",
@@ -2214,7 +2214,7 @@
             "value": "100 x level",
             "resources": "2 / 3 / 4",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Gehon",
@@ -2224,7 +2224,7 @@
             "value": "100 x level",
             "resources": "2 / 3 / 4",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Pischon",
@@ -2234,7 +2234,7 @@
             "value": "1000 x level",
             "resources": "4 / 5 / 6",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Styx",
@@ -2244,7 +2244,7 @@
             "value": "200",
             "resources": "5",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Acheron",
@@ -2254,7 +2254,7 @@
             "value": "200",
             "resources": "5",
             "cult": "Anabaptists",
-            "category": "oils"
+            "category": "Oils"
         },
         {
             "name": "Regional map",
@@ -2264,7 +2264,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Compass",
@@ -2274,7 +2274,7 @@
             "value": "220",
             "resources": "-",
             "cult": "",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Noumenon Vocalizer",
@@ -2284,7 +2284,7 @@
             "value": "2400",
             "resources": "3",
             "cult": "Spitalians",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Gauging material",
@@ -2294,7 +2294,7 @@
             "value": "600 x Level",
             "resources": "4",
             "cult": "Spitalians",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Tracker",
@@ -2304,7 +2304,7 @@
             "value": "4400",
             "resources": "4",
             "cult": "Chroniclers",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Binocular",
@@ -2314,7 +2314,7 @@
             "value": "5200",
             "resources": "2",
             "cult": "Hellvetics",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "",
@@ -2324,7 +2324,7 @@
             "value": "",
             "resources": "",
             "cult": "",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Pathfinder",
@@ -2334,7 +2334,7 @@
             "value": "15000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Transponder bracelet",
@@ -2344,7 +2344,7 @@
             "value": "580",
             "resources": "1",
             "cult": "Hellvetics",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Astrolabe",
@@ -2354,7 +2354,7 @@
             "value": "650",
             "resources": "1",
             "cult": "Neolibyans",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Atlas",
@@ -2364,7 +2364,7 @@
             "value": "1000 x Level",
             "resources": "2,3,4",
             "cult": "Neolibyans",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "RG Atlas",
@@ -2374,7 +2374,7 @@
             "value": "4500",
             "resources": "3",
             "cult": "Palers",
-            "category": "orienteering"
+            "category": "Orienteering"
         },
         {
             "name": "Blanket / sleeping bag",
@@ -2384,7 +2384,7 @@
             "value": "10",
             "resources": "-",
             "cult": "",
-            "category": "overnight"
+            "category": "Overnight"
         },
         {
             "name": "Insect net",
@@ -2394,7 +2394,7 @@
             "value": "80",
             "resources": "-",
             "cult": "",
-            "category": "overnight"
+            "category": "Overnight"
         },
         {
             "name": "Camo net",
@@ -2404,7 +2404,7 @@
             "value": "60",
             "resources": "-",
             "cult": "",
-            "category": "overnight"
+            "category": "Overnight"
         },
         {
             "name": "Tent",
@@ -2414,7 +2414,7 @@
             "value": "120",
             "resources": "-",
             "cult": "",
-            "category": "overnight"
+            "category": "Overnight"
         },
         {
             "name": "Distillate, 1L",
@@ -2424,7 +2424,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Healing herbs",
@@ -2434,7 +2434,7 @@
             "value": "30",
             "resources": "-",
             "cult": "",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Antibiotics",
@@ -2444,7 +2444,7 @@
             "value": "100 x level",
             "resources": "3 / 4 / 5",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Antidote",
@@ -2454,7 +2454,7 @@
             "value": "100 x level",
             "resources": "3 / 4 / 5",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "EX",
@@ -2464,7 +2464,7 @@
             "value": "200",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Narcotics",
@@ -2474,7 +2474,7 @@
             "value": "300 x level",
             "resources": "4 / 5 / 6",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Pain killers",
@@ -2484,7 +2484,7 @@
             "value": "200 x level",
             "resources": "4 / 5 / 6",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Stimulants",
@@ -2494,7 +2494,7 @@
             "value": "200 x level",
             "resources": "4 / 5 / 6",
             "cult": "Spitalians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Duat Blood",
@@ -2504,7 +2504,7 @@
             "value": "300 x level",
             "resources": "1 / 2 / 3",
             "cult": "Anubians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Duat fruit",
@@ -2514,7 +2514,7 @@
             "value": "200 x level",
             "resources": "1 / 2 / 3",
             "cult": "Anubians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Marduk oil",
@@ -2524,7 +2524,7 @@
             "value": "400",
             "resources": "-",
             "cult": "Anubians",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Blood of Aries",
@@ -2534,7 +2534,7 @@
             "value": "3000",
             "resources": "6",
             "cult": "Jehammedans",
-            "category": "pharmaceutics"
+            "category": "Pharmaceutics"
         },
         {
             "name": "Crossbow",
@@ -2550,7 +2550,7 @@
             "value": "400",
             "resources": "-",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Blow gun",
@@ -2566,7 +2566,7 @@
             "value": "30",
             "resources": "-",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Bow",
@@ -2582,7 +2582,7 @@
             "value": "200",
             "resources": "-",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Composite bo",
@@ -2598,7 +2598,7 @@
             "value": "200",
             "resources": "",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Repeating Crossbow",
@@ -2614,7 +2614,7 @@
             "value": "2000",
             "resources": "-",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Heavy Crossbow",
@@ -2630,7 +2630,7 @@
             "value": "800",
             "resources": "-",
             "cult": "",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Harpoon Crossbow",
@@ -2646,7 +2646,7 @@
             "value": "600",
             "resources": "2",
             "cult": "Apocalyptics",
-            "category": "projectile weapons"
+            "category": "Projectile Weapons"
         },
         {
             "name": "Hunting rifle",
@@ -2662,7 +2662,7 @@
             "value": "900",
             "resources": "-",
             "cult": "",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Sniper rifle",
@@ -2678,7 +2678,7 @@
             "value": "4000",
             "resources": "-",
             "cult": "",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Shotgun",
@@ -2694,7 +2694,7 @@
             "value": "1500",
             "resources": "-",
             "cult": "",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Pumpgun",
@@ -2710,7 +2710,7 @@
             "value": "2000",
             "resources": "-",
             "cult": "",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Light MG",
@@ -2726,7 +2726,7 @@
             "value": "5000",
             "resources": "-",
             "cult": "",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Fungicide Rifle",
@@ -2742,7 +2742,7 @@
             "value": "2300",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Trailblazer",
@@ -2758,7 +2758,7 @@
             "value": "18000",
             "resources": "-",
             "cult": "Hellvetics",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Trailblazer",
@@ -2774,7 +2774,7 @@
             "value": "18000",
             "resources": "-",
             "cult": "Hellvetics",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Trailblazer",
@@ -2790,7 +2790,7 @@
             "value": "18000",
             "resources": "-",
             "cult": "Hellvetics",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Judges‘ Musket",
@@ -2806,7 +2806,7 @@
             "value": "900",
             "resources": "2",
             "cult": "Judges",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Marvel",
@@ -2822,7 +2822,7 @@
             "value": "1400",
             "resources": "1",
             "cult": "Scrappers",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Assault rifle",
@@ -2838,7 +2838,7 @@
             "value": "12000",
             "resources": "2",
             "cult": "Scourgers",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Hunting rifle ( Neo. )",
@@ -2854,7 +2854,7 @@
             "value": "1800",
             "resources": "3",
             "cult": "Neolibyans",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Masterpiece rifle",
@@ -2870,7 +2870,7 @@
             "value": "14000",
             "resources": "5",
             "cult": "Neolibyans",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Flechette rifle",
@@ -2886,7 +2886,7 @@
             "value": "32000",
             "resources": "-",
             "cult": "RG",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Sagur-72",
@@ -2902,7 +2902,7 @@
             "value": "27000",
             "resources": "-",
             "cult": "RG",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Soul burner",
@@ -2918,7 +2918,7 @@
             "value": "56000",
             "resources": "-",
             "cult": "Free Spirit",
-            "category": "rifles"
+            "category": "Rifles"
         },
         {
             "name": "Cascader",
@@ -2934,7 +2934,7 @@
             "value": "6000",
             "resources": "5",
             "cult": "Chroniclers",
-            "category": "sonic weapons"
+            "category": "Sonic Weapons"
         },
         {
             "name": "Vocoder",
@@ -2950,7 +2950,7 @@
             "value": "",
             "resources": "",
             "cult": "Chroniclers",
-            "category": "sonic weapons"
+            "category": "Sonic Weapons"
         },
         {
             "name": "Lock pick",
@@ -2960,7 +2960,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "stealth"
+            "category": "Stealth"
         },
         {
             "name": "Camo paint",
@@ -2970,7 +2970,7 @@
             "value": "15",
             "resources": "-",
             "cult": "",
-            "category": "stealth"
+            "category": "Stealth"
         },
         {
             "name": "Periscope",
@@ -2980,7 +2980,7 @@
             "value": "100",
             "resources": "2",
             "cult": "Scrappers",
-            "category": "stealth"
+            "category": "Stealth"
         },
         {
             "name": "Key ring",
@@ -2990,7 +2990,7 @@
             "value": "400",
             "resources": "3",
             "cult": "Apocalyptics",
-            "category": "stealth"
+            "category": "Stealth"
         },
         {
             "name": "Sesamite",
@@ -3000,7 +3000,7 @@
             "value": "18000",
             "resources": "5",
             "cult": "Palers",
-            "category": "stealth"
+            "category": "Stealth"
         },
         {
             "name": "Phaeton",
@@ -3010,7 +3010,7 @@
             "value": "18000",
             "resources": "3",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Cataract",
@@ -3020,7 +3020,7 @@
             "value": "12000",
             "resources": "3",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Orbital",
@@ -3030,7 +3030,7 @@
             "value": "22000",
             "resources": "4",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Arbiter",
@@ -3040,7 +3040,7 @@
             "value": "44000",
             "resources": "6",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Quantum",
@@ -3050,7 +3050,7 @@
             "value": "9000",
             "resources": "3",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Quasar",
@@ -3060,7 +3060,7 @@
             "value": "38000",
             "resources": "5",
             "cult": "Palers",
-            "category": "sun discs"
+            "category": "Sun Discs"
         },
         {
             "name": "Codex",
@@ -3070,7 +3070,7 @@
             "value": "300",
             "resources": "-",
             "cult": "Judges",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Codex special edition",
@@ -3080,7 +3080,7 @@
             "value": "800",
             "resources": "3",
             "cult": "Judges",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Judgment tools",
@@ -3090,7 +3090,7 @@
             "value": "40",
             "resources": "1",
             "cult": "Judges",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Clan tattoos",
@@ -3100,7 +3100,7 @@
             "value": "150",
             "resources": "1",
             "cult": "Clanners",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Body paint",
@@ -3110,7 +3110,7 @@
             "value": "30",
             "resources": "1",
             "cult": "Clanners",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Anubis mask",
@@ -3120,7 +3120,7 @@
             "value": "200",
             "resources": "-",
             "cult": "Anubians",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Anubis finger",
@@ -3130,7 +3130,7 @@
             "value": "9000",
             "resources": "-",
             "cult": "Anubians",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Soul stones",
@@ -3140,7 +3140,7 @@
             "value": "800",
             "resources": "1",
             "cult": "Anubians",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Scourger mask",
@@ -3150,7 +3150,7 @@
             "value": "140",
             "resources": "1",
             "cult": "Scourgers",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Balancer",
@@ -3160,7 +3160,7 @@
             "value": "500",
             "resources": "1",
             "cult": "Neolibyans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Balancer: pocket calculator",
@@ -3170,7 +3170,7 @@
             "value": "20000",
             "resources": "3",
             "cult": "Neolibyans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Balancer: lock",
@@ -3180,7 +3180,7 @@
             "value": "4000",
             "resources": "2",
             "cult": "Neolibyans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Balancer: trap",
@@ -3190,7 +3190,7 @@
             "value": "8000",
             "resources": "2",
             "cult": "Neolibyans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Apocalyptic Tarot",
@@ -3200,7 +3200,7 @@
             "value": "560",
             "resources": "-",
             "cult": "Apocalyptics",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Icons",
@@ -3210,7 +3210,7 @@
             "value": "200",
             "resources": "-",
             "cult": "Jehammedans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Jehammed’s Teachings",
@@ -3220,7 +3220,7 @@
             "value": "2000",
             "resources": "3",
             "cult": "Jehammedans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Jehammed’s Will/Aries‘s Blessing",
@@ -3230,7 +3230,7 @@
             "value": "6000",
             "resources": "5",
             "cult": "Jehammedans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Seal stone",
@@ -3240,7 +3240,7 @@
             "value": "300",
             "resources": "2",
             "cult": "Jehammedans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Jehammed’s Star",
@@ -3250,7 +3250,7 @@
             "value": "90",
             "resources": "-",
             "cult": "Jehammedans",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Grim sun",
@@ -3260,7 +3260,7 @@
             "value": "190",
             "resources": "1",
             "cult": "Palers",
-            "category": "talismans / insignia"
+            "category": "Talismans / Insignia"
         },
         {
             "name": "Bugs and surveillance equipment",
@@ -3270,7 +3270,7 @@
             "value": "2200",
             "resources": "2",
             "cult": "Spitalians",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Stream drones + display",
@@ -3280,7 +3280,7 @@
             "value": "19000",
             "resources": "6",
             "cult": "Chroniclers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Draft printer",
@@ -3290,7 +3290,7 @@
             "value": "4000",
             "resources": "2",
             "cult": "Chroniclers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Forager Uplink",
@@ -3300,7 +3300,7 @@
             "value": "33000",
             "resources": "4",
             "cult": "Hellvetics",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Pneumatic metal shears",
@@ -3310,7 +3310,7 @@
             "value": "1800",
             "resources": "3",
             "cult": "Scrappers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Tool bag",
@@ -3320,7 +3320,7 @@
             "value": "600 x Stufe",
             "resources": "2,4,6",
             "cult": "Scrappers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Electronics tools",
@@ -3330,7 +3330,7 @@
             "value": "2400",
             "resources": "2",
             "cult": "Palers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Throwing Pulsor",
@@ -3340,7 +3340,7 @@
             "value": "6000",
             "resources": "3",
             "cult": "Palers",
-            "category": "technology"
+            "category": "Technology"
         },
         {
             "name": "Bola",
@@ -3356,7 +3356,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Harpoon",
@@ -3372,7 +3372,7 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Net",
@@ -3388,7 +3388,7 @@
             "value": "30",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Sling",
@@ -3404,7 +3404,7 @@
             "value": "5",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Atlatl",
@@ -3420,7 +3420,7 @@
             "value": "50",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Stone",
@@ -3436,7 +3436,7 @@
             "value": "-",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Throwing axe",
@@ -3452,7 +3452,7 @@
             "value": "50",
             "resources": "-",
             "cult": "-",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Throwing knife",
@@ -3468,7 +3468,7 @@
             "value": "40",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Shuriken",
@@ -3484,7 +3484,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "thrown"
+            "category": "Thrown"
         },
         {
             "name": "Backpack",
@@ -3494,7 +3494,7 @@
             "value": "15",
             "resources": "-",
             "cult": "",
-            "category": "transportation"
+            "category": "Transportation"
         },
         {
             "name": "Sleigh",
@@ -3504,7 +3504,7 @@
             "value": "20",
             "resources": "-",
             "cult": "",
-            "category": "transportation"
+            "category": "Transportation"
         },
         {
             "name": "Carrying rig",
@@ -3514,7 +3514,7 @@
             "value": "100 x level",
             "resources": "1,2,3",
             "cult": "Scrappers",
-            "category": "transportation"
+            "category": "Transportation"
         },
         {
             "name": "Bear trap",
@@ -3523,7 +3523,7 @@
             "encumbrance": "1",
             "tech": "II",
             "value": "30",
-            "category": "traps"
+            "category": "Traps"
         },
         {
             "name": "Pitfall",
@@ -3532,7 +3532,7 @@
             "encumbrance": "-",
             "tech": "I",
             "value": "-",
-            "category": "traps"
+            "category": "Traps"
         },
         {
             "name": "Tripwire",
@@ -3541,7 +3541,7 @@
             "encumbrance": "-",
             "tech": "II",
             "value": "5",
-            "category": "traps"
+            "category": "Traps"
         },
         {
             "name": "Mine",
@@ -3550,7 +3550,7 @@
             "encumbrance": "1",
             "tech": "III",
             "value": "Special",
-            "category": "traps"
+            "category": "Traps"
         },
         {
             "name": "Motorbike",
@@ -3565,7 +3565,7 @@
             "value": "2000",
             "resources": "-",
             "cult": "",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Scrapper buggy",
@@ -3580,7 +3580,7 @@
             "value": "1500",
             "resources": "-",
             "cult": "",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Motor sleigh",
@@ -3595,7 +3595,7 @@
             "value": "1200",
             "resources": "-",
             "cult": "",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Tractor rig",
@@ -3610,7 +3610,7 @@
             "value": "800",
             "resources": "4",
             "cult": "Scrappers",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Kom",
@@ -3625,7 +3625,7 @@
             "value": "4500",
             "resources": "4",
             "cult": "Scourgers",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Surge Tank",
@@ -3640,7 +3640,7 @@
             "value": "1500000",
             "resources": "6",
             "cult": "Neolibyans",
-            "category": "vehicles"
+            "category": "Vehicles"
         },
         {
             "name": "Apocalyptic Motorbike",
@@ -3655,7 +3655,7 @@
             "value": "4200",
             "resources": "5",
             "cult": "Apocalyptics",
-            "category": "vehicles"
+            "category": "Vehicles"
         }
     ]
 }

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Table from './components/table';
-import ItemRow from './components/item';
 
 type Item = {
     name: string
@@ -331,11 +330,9 @@ class App extends Component<any, AppState, any> {
                         <div className="sort-category-container">
                             <h4>Category Sort</h4>
                             <div id="category-container" className="sort-container">
-                                {console.log(`* log categories from render`)}
-                                {console.log(this.state.categories)}
                                 {Object.keys(this.state.categories).map((key) => (
                                 <div className="category-input-container">
-                                    {/* @ts-ignore */}
+                                    {/* @ts-expect-error */}
                                     <input name={this.state.categories[key].name} type="checkbox" checked={this.state.categories[key].checked} onChange={this.handleCategoryToggleChange} />&nbsp;<label>{this.state.categories[key].name}</label>
                                 </div>
                                 ))}
@@ -343,43 +340,11 @@ class App extends Component<any, AppState, any> {
                         </div>
                     </section>
                     <section id="sorted-output">
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Max Speed</th>
-                                    <th scope="col">Acceleration</th>
-                                    <th scope="col">Brake</th>
-                                    <th scope="col">Armor</th>
-                                    <th scope="col">Body</th>
-                                    <th scope="col">Structure</th>
-                                    <th scope="col">Flesh Wounds</th>
-                                    <th scope="col">Trauma</th>
-                                    <th scope="col">Armor Rating</th>
-                                    <th scope="col">Defense</th>
-                                    <th scope="col">Attack</th>
-                                    <th scope="col">Effect</th>
-                                    <th scope="col">Injector</th>
-                                    <th scope="col">Caliber</th>
-                                    <th scope="col">Handling</th>
-                                    <th scope="col">Distance</th>
-                                    <th scope="col">Damage</th>
-                                    <th scope="col">Magazine</th>
-                                    <th scope="col">Qualities</th>
-                                    <th scope="col">Encumbrance</th>
-                                    <th scope="col">Slots (Artillery)</th>
-                                    <th scope="col">Tech</th>
-                                    <th scope="col">Slots</th>
-                                    <th scope="col">Value</th>
-                                    <th scope="col">Resources</th>
-                                    <th scope="col">Cult</th>
-                                    <th scope="col">Category</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {this.state.displayList.map((item) => <ItemRow item={item}/>)}
-                            </tbody>
-                        </table>
+                        {console.log(`RENDER | building tables`)}
+                        {Object.keys(this.state.categories).map((category) => (
+                            // @ts-expect-error
+                            <Table category={this.state.categories[category].name} checked={this.state.categories[category].checked} headers={this.state.categories[category].headers} items={this.state.displayList} />
+                        ))}
                     </section>
                 </main>
                 <footer>

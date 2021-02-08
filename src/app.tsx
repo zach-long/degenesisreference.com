@@ -336,7 +336,7 @@ class App extends Component<any, AppState, any> {
 
     render() {
         return (
-            <div id="app-container">
+            <div id="app-container" className="fade-intro">
                 <header>
                     <h1 className="text-center">Degenesis Reference</h1>
                 </header>

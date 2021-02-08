@@ -338,7 +338,7 @@ class App extends Component<any, AppState, any> {
         return (
             <div id="app-container">
                 <header>
-                    <h1 className="text-center">Degenesis Item Lookup Database</h1>
+                    <h1 className="text-center">Degenesis Reference</h1>
                 </header>
                 <main id="content">
                     <section id="sort-parameters">
@@ -372,10 +372,10 @@ class App extends Component<any, AppState, any> {
                 </main>
                 <footer>
                     <div className="footer-element">
-                        <h6 className="text-center">&copy; 2021 Zachary Long</h6>
+                        <h6 className="text-center">&copy; 2021 <a href="https://zalong.dev" target="_blank">Zachary Long</a></h6>
                     </div>
                     <div className="footer-element">
-                        <h6 className="text-center">Zachary Long &amp; "Degenesis Item Lookup Database" is not affiliated with SIXMOREVODKA and exists with the intent of making their intellectual property, DEGENESIS, more accessible. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a>.</h6>
+                        <h6 className="text-center">This application and its creator are not affiliated with SIXMOREVODKA and exists with the intent of making their intellectual property, DEGENESIS, more accessible. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a>.</h6>
                     </div>
                 </footer>
             </div>

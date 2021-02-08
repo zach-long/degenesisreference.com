@@ -1,5 +1,6 @@
-### To-do
+Deploy checklist:
 
-Code cleanup
-- [] Establish type definitions in own files
-- [] Ensure ts standards are set throughout app (no lazy typing)
+- [] Create new site title & name, update head tags accordingly
+- [] Purchase domain, add google analytics
+- [] Update site footer copy
+- [] Add Open Graph tags

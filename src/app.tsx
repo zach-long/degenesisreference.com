@@ -1,8 +1,10 @@
 import React, { Component, SyntheticEvent } from 'react';
 import ReactDOM from 'react-dom';
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Table from './components/table';
+
+// include css for webpack inline bundle
+import '../scss/main.scss';
 
 type Item = {
     name: string

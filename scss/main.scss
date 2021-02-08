@@ -22,8 +22,15 @@ $reset-button-color-active: $dark-gray;
 $reset-button-text-color-focus: white;
 $reset-button-color-focus: $medium-gray;
 
+$table-border-color: lightgray;
+
+$table-category-row-deg: 355deg;
+$table-category-row-color-start: $table-border-color;
+$table-category-row-color-stop: white;
+$category-header-underline-color: $table-border-color;
+
 $output-section-divider-color: slategray;
-$category-header-underline-color: lightgray;
+
 $name-search-border-color: #5e5e5e;
 $name-search-border-focus-color: $red;
 $name-search-border-trans-speed: 250ms;
@@ -41,6 +48,10 @@ a {
 // STYLES
 html, body, #app, #app-container {
     min-height: 100vh;
+}
+
+th, td {
+    border-color: $table-border-color !important;
 }
 
 #app-container {
@@ -146,6 +157,10 @@ button {
     font-family: $button-font;
 }
 
+.category-header-row {
+    background: linear-gradient($table-category-row-deg, $table-category-row-color-start, $table-category-row-color-stop);
+}
+
 .category-header-name {
     font-size: 1.5rem;
     color: $dark-red;
@@ -178,5 +193,27 @@ footer {
         border-top: 2px solid #000;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+    }
+}
+
+// TRANSITIONS & ANIMATIONS
+.fade-intro {
+    animation: fade-in 400ms ease-in-out;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.fade-quick {
+    animation: fade-in 400ms ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
     }
 }

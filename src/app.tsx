@@ -336,7 +336,7 @@ class App extends Component<any, AppState, any> {
 
     render() {
         return (
-            <div id="app-container">
+            <div id="app-container" className="fade-intro">
                 <header>
                     <h1 className="text-center">Degenesis Reference</h1>
                 </header>
@@ -375,7 +375,7 @@ class App extends Component<any, AppState, any> {
                         <h6 className="text-center">&copy; 2021 <a href="https://zalong.dev" target="_blank">Zachary Long</a></h6>
                     </div>
                     <div className="footer-element">
-                        <h6 className="text-center">This application and its creator are not affiliated with <a href="https://sixmorevodka.com/home" target="_blank">SIXMOREVODKA</a>. "Degensis Reference" exists with the intent of making their intellectual property, DEGENESIS, more accessible by making it easier for players to quickly reference portions of the game. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or go to the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a> to view their immersive lore &amp; art for the game, or download the books.</h6>
+                        <h6 className="text-center">This application and its creator are not affiliated with <a href="https://sixmorevodka.com/home" target="_blank">SIXMOREVODKA</a>. "Degenesis Reference" exists with the intent of making their intellectual property, DEGENESIS, more accessible by making it easier for players to quickly reference portions of the game. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or go to the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a> to view their immersive lore &amp; art for the game, or download the books.</h6>
                     </div>
                 </footer>
             </div>

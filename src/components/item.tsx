@@ -57,7 +57,7 @@ class ItemRow extends Component<ItemProps, ItemState> {
             <tr>
                 {this.props.headers.map((header) => (
                     // @ts-expect-error
-                    <td>{this.props.item[header]}</td>
+                    <td className="field-item">{this.props.item[header]}</td>
                 ))}
             </tr>
         );

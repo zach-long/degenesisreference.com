@@ -87,19 +87,19 @@ class App extends Component<any, AppState, any> {
                 'Accept': 'application/json'
             }
         }).then((response) => {
-            console.log(`Fetch result: `);
-            console.log(response)
+            // console.log(`Fetch result: `);
+            // console.log(response)
             return response.json();
         }).then((json) => {
-            console.log(`JSON result: `);
-            console.log(json);
+            // console.log(`JSON result: `);
+            // console.log(json);
             let categories: Object = this.getCategories(json);
-            console.log(`Categorie result:`);
-            console.log(categories);
+            // console.log(`Category result:`);
+            // console.log(categories);
             return [categories, json];
         }).then((ctgJsonArr) => {
-            console.log(`Setting state with categories & data`);
-            console.log(ctgJsonArr)
+            // console.log(`Setting state with categories & data`);
+            // console.log(ctgJsonArr)
             this.setState({
                 categories: ctgJsonArr[0],
                 itemList: ctgJsonArr[1].data,
@@ -119,7 +119,7 @@ class App extends Component<any, AppState, any> {
             // @ts-expect-error
             falsifyCategories[category].checked = false;
         });
-        console.log(falsifyCategories);
+        // console.log(falsifyCategories);
 
         this.setState({
             sortingApplied: false,
@@ -160,12 +160,12 @@ class App extends Component<any, AppState, any> {
 
     // 
     applySorting = (criteria: Array<SortCriteria>): Promise<Array<Item>> => {
-        console.log(`Searching cached items for sorting criteria...`);
+        // console.log(`Searching cached items for sorting criteria...`);
         return new Promise((resolve) => {
             const searchPool = this.state.itemList;
-            console.log(`* Determining search pool, is sorting applied?`);
-            console.log(`* According to state: ${this.state.sortingApplied}`);
-            console.log(criteria);
+            // console.log(`* Determining search pool, is sorting applied?`);
+            // console.log(`* According to state: ${this.state.sortingApplied}`);
+            // console.log(criteria);
             let foundResults: Array<Item> = searchPool.filter((item: Item) => {
                 let matchedItem: Array<Item> = [];
                 criteria.forEach((criterion) => {
@@ -197,7 +197,7 @@ class App extends Component<any, AppState, any> {
     }
 
     getCategories = (json: any): Object => {
-        console.log(`* getCategories`);
+        // console.log(`* getCategories`);
         let categories: Array<string> =  Array.from(new Set(json.data.map((dataObj: any): string => dataObj.category)));
         // console.log(`* categories`);
         // console.log(categories);
@@ -235,11 +235,11 @@ class App extends Component<any, AppState, any> {
     }
 
     searchItemList = (searchValue: string, searchPool: Array<Item>): Promise<Array<Item>> => {
-        console.log(`Searching cached items for query param: ${searchValue}`);
+        // console.log(`Searching cached items for query param: ${searchValue}`);
         return new Promise((resolve) => {
             let foundResults: Array<Item> = searchPool.filter((item: Item) => {
-                console.log(`Iterating over: `);
-                console.log(item);
+                // console.log(`Iterating over: `);
+                // console.log(item);
 
                 let standardizedCompareValue: string = item.name.toLowerCase();
                 let standardizedSearchValue: string = searchValue.toLowerCase();
@@ -247,15 +247,15 @@ class App extends Component<any, AppState, any> {
                 let checkMatch: number = standardizedCompareValue.indexOf(standardizedSearchValue);
                 
                 if (checkMatch != -1) {
-                    console.log(`Found match at ${checkMatch} for ${item.name}`);
+                    // console.log(`Found match at ${checkMatch} for ${item.name}`);
                     // let foundMatch = item.name.indexOf(searchValue);
                     return item;
                 }
                 
             });
 
-            console.log(`Filter results logged below:`);
-            console.log(foundResults);
+            // console.log(`Filter results logged below:`);
+            // console.log(foundResults);
             
             resolve(foundResults);
         });
@@ -268,10 +268,10 @@ class App extends Component<any, AppState, any> {
 
         let pool: Array<Item> = this.state.sortedList;
 
-        console.log(`Preparing to search list logged below:`);
-        console.log(pool);
+        // console.log(`Preparing to search list logged below:`);
+        // console.log(pool);
         this.searchItemList(value, pool).then((foundResults) => {
-            console.log(`FOUND: ${foundResults}`);
+            // console.log(`FOUND: ${foundResults}`);
 
             this.setState({
                 search: value,
@@ -285,9 +285,8 @@ class App extends Component<any, AppState, any> {
         const value: boolean = target.checked;
         const name: string = target.name;
 
-        console.log(`* handleCategoryToggleChange()`);
-        // @ts-expect-error
-        console.log(this.state.categories[name].name + ' ' + this.state.categories[name].checked + ' -> ' + value);
+        // console.log(`* handleCategoryToggleChange()`);
+        // console.log(this.state.categories[name].name + ' ' + this.state.categories[name].checked + ' -> ' + value);
 
         let category: Object = {...this.state.categories};
         // @ts-expect-error
@@ -295,20 +294,20 @@ class App extends Component<any, AppState, any> {
         // @ts-expect-error
         this.setState({category});
 
-        console.log(`* isSortingApplied()`);
+        // console.log(`* isSortingApplied()`);
         this.isSortingApplied().then((isSortingApplied: boolean) => {
-            console.log(isSortingApplied);
+            // console.log(isSortingApplied);
             this.setState({sortingApplied: isSortingApplied});
 
             if (isSortingApplied) {
-                console.log(`* getSortedFields()`);
+                // console.log(`* getSortedFields()`);
                 this.getSortedFields().then((result: Array<SortCriteria>) => {
-                    console.log(result);
+                    // console.log(result);
     
-                    console.log(`* applySorting()`);
+                    // console.log(`* applySorting()`);
                     this.applySorting(result).then((result: Array<Item>) => {
-                        console.log(`* applySorting result:`);
-                        console.log(result);
+                        // console.log(`* applySorting result:`);
+                        // console.log(result);
     
                         this.resetNameSearch();   
                         this.setState({
@@ -318,7 +317,7 @@ class App extends Component<any, AppState, any> {
                     });
                 });
             } else {
-                console.log(`* No sorting applied, setting displayList to itemList`);
+                // console.log(`* No sorting applied, setting displayList to itemList`);
 
                 this.resetNameSearch();
                 this.setState({
@@ -330,8 +329,8 @@ class App extends Component<any, AppState, any> {
     }
 
     componentDidMount() {
-        console.log(`MOUNT | App`);
-        console.log(this.state);
+        // console.log(`MOUNT | App`);
+        // console.log(this.state);
         this.getData();
     }
 

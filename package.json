@@ -9,10 +9,9 @@
     "build": "webpack --config webpack.config.prod.js",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "build-dev": "webpack --config webpack.config.dev.js"
-    
   },
   "author": "",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "@types/express": "^4.17.11",
     "@types/react": "^17.0.0",

@@ -1,5 +1,3 @@
-// font used is Avenir or Copenhagen may work as a stand-in
-
 // VARIABLES
 $content-width: 80%;
 $red: #ed1d27;
@@ -7,10 +5,23 @@ $dark-red: #c20811;
 $medium-gray: #708090;
 $dark-gray: #384048;
 
+$site-header-font: 'Nunito', sans-serif;
+$sort-header-font: 'Nunito Sans', sans-serif;
+$sort-input-font: 'Roboto', sans-serif;
+$button-font: 'Roboto', sans-serif;
+$table-category-header-font: 'Nunito', sans-serif;
+$table-column-header-font: 'Roboto', sans-serif;
+$table-column-row-font: 'Roboto', sans-serif;
+
 $reset-button-text-color: white;
 $reset-button-color: $medium-gray;
 $reset-button-text-color-hover: white;
 $reset-button-color-hover: $dark-gray;
+$reset-button-text-color-active: white;
+$reset-button-color-active: $dark-gray;
+$reset-button-text-color-focus: white;
+$reset-button-color-focus: $medium-gray;
+
 $output-section-divider-color: slategray;
 $category-header-underline-color: lightgray;
 $name-search-border-color: #5e5e5e;
@@ -39,6 +50,7 @@ html, body, #app, #app-container {
 
 header {
     padding: 1rem 0;
+    font-family: $site-header-font;
 }
 
 .btn-reset {
@@ -49,9 +61,22 @@ header {
     border-color: $reset-button-color;
 
     &:hover {
-        color: $reset-button-text-color-hover;
-        background-color: $reset-button-color-hover;
-        border-color: $reset-button-color-hover;
+        color: $reset-button-text-color-hover !important;
+        background-color: $reset-button-color-hover !important;
+        border-color: $reset-button-color-hover !important;
+    }
+
+    &:active {
+        color: $reset-button-text-color-active !important;
+        background-color: $reset-button-color-active !important;
+        border-color: $reset-button-color-active !important;
+    }
+
+    &:focus {
+        color: $reset-button-text-color-focus !important;
+        background-color: $reset-button-color-focus !important;
+        border-color: $reset-button-color-focus !important;
+        box-shadow: none !important;
     }
 }
 
@@ -109,17 +134,35 @@ header {
         display: inline-block;
         border-bottom: 2px solid $category-header-underline-color;
         padding: 0 0 .25rem 0;
+        font-family: $sort-header-font;
     }
+
+    .sort-container {
+        font-family: $sort-input-font;
+    }
+}
+
+button {
+    font-family: $button-font;
 }
 
 .category-header-name {
     font-size: 1.5rem;
     color: $dark-red;
     font-weight: normal;
+    font-family: $table-category-header-font;
+}
+
+.column-header-name {
+    font-family: $table-column-header-font;
 }
 
 .category-table {
     margin: 0 0 4rem 0;
+}
+
+.field-item {
+    font-family: $table-column-row-font;
 }
 
 footer {

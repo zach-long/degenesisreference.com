@@ -77,7 +77,7 @@ class Table extends Component<TableProps, TableState> {
                         <tr>
                             {/* {console.log(`RENDER | loading table headers for ${this.props.category}`)} */}
                             {displayedHeaders.map((header) => (
-                                <th scope="col">{this.capitalizeFirstLetters(header)}</th>
+                                <th scope="col" className="column-header-name">{this.capitalizeFirstLetters(header)}</th>
                             ))}
                         </tr>
                     </thead>

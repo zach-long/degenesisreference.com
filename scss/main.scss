@@ -4,6 +4,7 @@ $red: #ed1d27;
 $dark-red: #c20811;
 $medium-gray: #708090;
 $dark-gray: #384048;
+$gray-text: #636363;
 
 $site-header-font: 'Nunito', sans-serif;
 $sort-header-font: 'Nunito Sans', sans-serif;
@@ -35,6 +36,8 @@ $name-search-border-color: #5e5e5e;
 $name-search-border-focus-color: $red;
 $name-search-border-trans-speed: 250ms;
 // $link-hover-trans-speed: 150ms;
+
+$footer-text-color: $gray-text;
 
 // TYPOGRAPHY
 a {
@@ -193,6 +196,11 @@ footer {
         border-top: 2px solid #000;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+
+        h6 {
+            font-size: .8rem;
+            color: $footer-text-color;
+        }
     }
 }
 

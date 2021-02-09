@@ -375,7 +375,7 @@ class App extends Component<any, AppState, any> {
                         <h6 className="text-center">&copy; 2021 DegenesisReference.com</h6>
                     </div>
                     <div className="footer-element">
-                        <h6 className="text-center">This application and its creator are not affiliated with <a href="https://sixmorevodka.com/home" target="_blank">SIXMOREVODKA</a>. DegenesisReference.com exists with the intent of making their intellectual property, DEGENESIS, more accessible by making it easier for players to quickly reference portions of the game. Consider visiting <a href="https://sixmorevodka.com/home" target="_blank">SMV</a> online or go to the official site of the primal-punk tabletop-roleplaying game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a> to view their immersive lore &amp; art for the game, or download the books.</h6>
+                        <h6 className="text-center">This application is not affiliated with or specifically approved by <a href="https://sixmorevodka.com/home" target="_blank">SIXMOREVODKA</a>. Degenesis is a trademark of SIXMOREVODKA Studio GmbH. All rights reserved. DegenesisReference.com exists with the intent of making their intellectual property, DEGENESIS, more accessible by making it easier for players to quickly reference information from the game. Please consider visiting the official site of the primal punk tabletop role-playing game <a href="https://degenesis.com/" target="_blank">DEGENESIS</a> to view the lore &amp; art for the game, download the books, or support their work.</h6>
                     </div>
                 </footer>
             </div>

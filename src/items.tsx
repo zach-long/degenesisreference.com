@@ -384,5 +384,5 @@ class App extends Component<any, AppState, any> {
     }
 }
 
-const app = document.getElementById('app');
+const app = document.getElementById('items');
 ReactDOM.render(<App/>, app);

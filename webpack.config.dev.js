@@ -1,8 +1,8 @@
 const path = require('path');
 
 const outputDir = `./public`;
-const sourceJs = `./src/app.tsx`;
-const outputJsName = `app.js`;
+const sourceJs = `./src/items.tsx`;
+const outputJsName = `items.js`;
 
 module.exports = {
   mode: 'development',

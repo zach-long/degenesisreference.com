@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon app/index.js",
     "build": "webpack --config webpack.config.prod.js",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "build-dev": "webpack --config webpack.config.dev.js",
@@ -33,6 +33,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5"
   }
 }

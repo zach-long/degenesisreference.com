@@ -1,10 +1,20 @@
 const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
 
 const app = express();
 
 dotenv.config();
+
+dbPath = process.env.MONGODB_URI
+
+mongoose.connect(dbPath);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, `connection error:`));
+db.once('open', () => {
+    console.log(`MongoDB connected successfully.`);
+});
 
 const indexRoutes = require('./routes/index.js');
 const itemRoutes = require('./routes/items.js');

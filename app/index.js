@@ -22,8 +22,31 @@ db.once('open', function () {
 });
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
+passport_1.default.serializeUser(function (user, done) {
+    done(null, user.id);
+});
+passport_1.default.deserializeUser(function (id, done) {
+    User.findById(id, function (err, user) {
+        done(err, user);
+    });
+});
 var localStrategy = new LocalStrategy(function (username, password, done) {
     console.log("* authenticating with local strategy");
+    User.findOne({ username: username }, function (err, user) {
+        console.log("* found user '" + user.name + "'");
+        if (err)
+            return done(err);
+        if (!user)
+            return done(null, false, { message: "Incorrect username." });
+        !User.isValidPassword(password, user.password, function (err, match) {
+            if (err)
+                return done(err);
+            if (!match)
+                return done(null, false, { message: "Incorrect password." });
+            console.log("* authentication successful");
+            return done(null, user);
+        });
+    });
 });
 passport_1.default.use('local', localStrategy);
 var indexRoutes = require('./routes/index.js');

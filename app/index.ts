@@ -24,29 +24,29 @@ db.once('open', () => {
 app.use(passport.initialize());
 app.use(passport.session());
 
-// passport.serializeUser((user, done) => {
-//     done(null, user.id);
-// });
+passport.serializeUser((user: any, done) => {
+    done(null, user.id);
+});
 
-// passport.deserializeUser((id, done) => {
-//     User.findById(id, (err, user) => {
-//         done(err, user);
-//     });
-// });
+passport.deserializeUser((id, done) => {
+    User.findById(id, (err: any, user: boolean | Express.User) => {
+        done(err, user);
+    });
+});
 
-const localStrategy = new LocalStrategy((username: string, password: string, done: object) => {
+const localStrategy = new LocalStrategy((username: string, password: string, done) => {
     console.log(`* authenticating with local strategy`);
-    // User.findOne({username: username}, (err, user) => {
-    //     console.log(`* found user '${user.name}'`);
-    //     if (err) return done(err);
-    //     if (!user) return done(null, false, {message: `Incorrect username.`});
-    //     !User.isValidPassword(password, user.password, (err, match) => {
-    //         if (err) return done(err);
-    //         if (!match) return done(null, false, {message: `Incorrect password.`});
-    //         console.log(`* authentication successful`);
-    //         return done(null, user);
-    //     });
-    // });
+    User.findOne({username: username}, (err: any, user: { name: string; password: string; }) => {
+        console.log(`* found user '${user.name}'`);
+        if (err) return done(err);
+        if (!user) return done(null, false, {message: `Incorrect username.`});
+        !User.isValidPassword(password, user.password, (err: any, match: any) => {
+            if (err) return done(err);
+            if (!match) return done(null, false, {message: `Incorrect password.`});
+            console.log(`* authentication successful`);
+            return done(null, user);
+        });
+    });
 });
 
 passport.use('local', localStrategy);

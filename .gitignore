@@ -3,3 +3,6 @@ node_modules
 package-lock.json
 
 .env
+
+app/config.ts
+app/config.js

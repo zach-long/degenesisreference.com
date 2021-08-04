@@ -10,12 +10,15 @@
     "watch": "webpack --watch --config webpack.config.dev.js",
     "build-dev": "webpack --config webpack.config.dev.js",
     "prod-server": "pm2 start ecosystem.config.js --env production",
+    "create-superuser": "node app/createAdminUser.js",
     "build-express": "tsc -p app",
     "watch-express": "tsc --watch -p app"
   },
   "author": "",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.11",
     "@types/passport": "^1.0.7",
     "@types/passport-local": "^1.0.34",
@@ -35,6 +38,7 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",

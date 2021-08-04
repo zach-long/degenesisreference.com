@@ -39,54 +39,62 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var mongoose_1 = require("mongoose");
-var bcryptjs_1 = __importDefault(require("bcryptjs"));
-var userSchema = new mongoose_1.Schema({
-    name: {
-        type: String
-    },
-    username: {
-        type: String,
-        unique: true
-    },
-    password: {
-        type: String
-    },
-    email: {
-        type: String
-    }
-});
-var User = module.exports = mongoose_1.model('User', userSchema);
-module.exports.createUser = function (user, cb) {
-    return __awaiter(this, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            console.log("* Calling function 'createUser()' from models/user");
-            bcryptjs_1.default.genSalt(10, function (err, salt) {
-                if (err) {
-                    console.log("* User model: error generating salt for new user");
-                }
-                else {
-                    console.log("* User model: salt generated successfully");
-                    bcryptjs_1.default.hash(user.password, salt, function (err, hash) {
-                        if (err) {
-                            console.log("* User model: hash error");
-                        }
-                        else {
-                            console.log("* User model: hash successful, saving new user");
-                            user.password = hash;
-                            user.save(cb);
-                        }
-                    });
-                }
+var mongoose_1 = __importDefault(require("mongoose"));
+var _a = require('./config.js'), adminName = _a.adminName, adminUsername = _a.adminUsername, adminPassword = _a.adminPassword, adminEmail = _a.adminEmail;
+var User = require('./models/user.js');
+var dbPath = "mongodb+srv://zach:b8RLB3TKeSuwLCE@cluster0.yjmy0.mongodb.net/Cluster0?retryWrites=true&w=majority";
+mongoose_1.default.connect(dbPath);
+var db = mongoose_1.default.connection;
+db.on('error', console.error.bind(console, "connection error:"));
+db.once('open', function () {
+    console.log("* MongoDB connected successfully at \"" + dbPath + "\".");
+    console.log("* Creating Admin user...");
+    createUserObject().then(function (uObj) {
+        console.log("* User object created successfully, preparing to insert into database");
+        insertUserObject(uObj).then(function (result) {
+            console.log(result);
+            mongoose_1.default.disconnect(function (err) {
+                if (err)
+                    throw err;
+                console.log("* MongoDB disconnected.");
             });
-            return [2];
+        }).catch(function (err) {
+            console.log("* Error inserting superuser into database");
+            console.log(err);
+        });
+        ;
+    });
+});
+function createUserObject() {
+    return __awaiter(this, void 0, void 0, function () {
+        var newUser;
+        return __generator(this, function (_a) {
+            console.log("* Creating user object...");
+            newUser = new User({
+                name: adminName,
+                username: adminUsername,
+                password: adminPassword,
+                email: adminEmail
+            });
+            console.log("User object:");
+            console.log(newUser);
+            return [2, newUser];
         });
     });
-};
-module.exports.isValidPassword = function (password, hash, cb) {
-    bcryptjs_1.default.compare(password, hash, function (err, match) {
-        if (err)
-            throw err;
-        cb(null, match);
+}
+function insertUserObject(obj) {
+    return new Promise(function (resolve, reject) {
+        console.log("* Storing user object...");
+        User.createUser(obj, function (msg) {
+            if (msg && msg.name === 'MongoError' && msg.code === 11000) {
+                reject(msg);
+            }
+            else if (msg) {
+                reject(msg);
+            }
+            else {
+                resolve("* Admin user created successfully.");
+            }
+        });
     });
-};
+}

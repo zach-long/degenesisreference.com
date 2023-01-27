@@ -1,3 +1,7 @@
+# No longer being hosted, as the game is no longer under development! Feel free to look at what I wrote anyway.
+
+---
+
 # Future Development Goals:
 
 ### General Direction
